@@ -1,0 +1,7 @@
+# Placeholder for icon files
+# Required icons:
+# - icon.png (256x256) - Main app icon
+# - icon_gray.png (256x256) - Grayscale icon
+# - launcher_icon.ico (256x256) - Windows launcher icon
+
+# For development, you can use any 256x256 PNG as icon.png

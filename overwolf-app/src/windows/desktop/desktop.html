@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://ddragon.leagueoflegends.com data:">
+    <title>ADC Threat Analyzer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/desktop.css">
+</head>
+<body>
+    <div class="desktop-container">
+        <!-- Header -->
+        <header class="desktop-header">
+            <div class="header-left">
+                <img src="../../icons/icon.png" alt="ADC Threat" class="app-icon">
+                <div class="app-info">
+                    <h1>ADC Threat Analyzer</h1>
+                    <span class="version">v1.0.0</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="connection-status" id="connection-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Disconnected</span>
+                </div>
+                <button id="btn-settings" class="icon-btn" title="Settings">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4"/>
+                    </svg>
+                </button>
+                <button id="btn-minimize" class="icon-btn" title="Minimize">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                    </svg>
+                </button>
+                <button id="btn-close" class="icon-btn close-btn" title="Close">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="desktop-main">
+            <!-- Welcome Section -->
+            <section class="welcome-section" id="welcome-section">
+                <div class="welcome-content">
+                    <div class="welcome-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M12 8v4"/>
+                            <path d="M12 16h.01"/>
+                        </svg>
+                    </div>
+                    <h2>Welcome to ADC Threat Analyzer</h2>
+                    <p>Real-time threat analysis for League of Legends ADC players</p>
+
+                    <div class="status-cards">
+                        <div class="status-card" id="game-status-card">
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>Game Status</h3>
+                                <p id="game-status-text">Waiting for League of Legends...</p>
+                            </div>
+                        </div>
+
+                        <div class="status-card" id="overlay-status-card">
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="3" y1="9" x2="21" y2="9"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>Overlay</h3>
+                                <p id="overlay-status-text">Ready - Press Ctrl+Shift+T to toggle</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-actions">
+                        <button id="btn-show-overlay" class="primary-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                            Show Overlay
+                        </button>
+                        <button id="btn-open-settings" class="secondary-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06"/>
+                            </svg>
+                            Settings
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Instructions Section -->
+            <section class="instructions-section">
+                <h2>How It Works</h2>
+                <div class="instruction-cards">
+                    <div class="instruction-card">
+                        <div class="step-number">1</div>
+                        <h3>Launch League</h3>
+                        <p>Start League of Legends and enter champion select</p>
+                    </div>
+                    <div class="instruction-card">
+                        <div class="step-number">2</div>
+                        <h3>Auto-Detect</h3>
+                        <p>Champions are automatically detected as they're picked</p>
+                    </div>
+                    <div class="instruction-card">
+                        <div class="step-number">3</div>
+                        <h3>Analyze Threats</h3>
+                        <p>View CC types, cooldowns, and strategic tips</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hotkeys Section -->
+            <section class="hotkeys-section">
+                <h2>Keyboard Shortcuts</h2>
+                <div class="hotkey-list">
+                    <div class="hotkey-item">
+                        <code>Ctrl+Shift+T</code>
+                        <span>Toggle overlay visibility</span>
+                    </div>
+                    <div class="hotkey-item">
+                        <code>Ctrl+Shift+L</code>
+                        <span>Lock/unlock overlay position</span>
+                    </div>
+                    <div class="hotkey-item">
+                        <code>Ctrl+Shift+↑/↓</code>
+                        <span>Adjust overlay transparency</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="desktop-footer">
+            <span>ADC Threat Analyzer</span>
+            <span>•</span>
+            <a href="https://github.com/SamTesura/adc-threat-overwolf" target="_blank">GitHub</a>
+            <span>•</span>
+            <span id="patch-version">Loading patch...</span>
+        </footer>
+    </div>
+
+    <script src="../../services/storage-service.js"></script>
+    <script src="../../utils/security.js"></script>
+    <script src="desktop.js"></script>
+</body>
+</html>
