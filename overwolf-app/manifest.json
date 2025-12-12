@@ -1,0 +1,130 @@
+{
+  "manifest_version": 1,
+  "type": "WebApp",
+  "meta": {
+    "name": "ADC Threat Analyzer",
+    "version": "1.0.0",
+    "minimum-overwolf-version": "0.200.0",
+    "author": "SamTesura",
+    "icon": "icons/icon.png",
+    "icon_gray": "icons/icon_gray.png",
+    "launcher_icon": "icons/launcher_icon.ico",
+    "description": "Real-time threat analysis for League of Legends ADC players. Automatically detects champion picks in champion select and displays threat information, CC types, cooldowns, and strategic tips."
+  },
+  "permissions": [
+    "Extensions",
+    "Streaming",
+    "DesktopWindow",
+    "GameInfo"
+  ],
+  "data": {
+    "start_window": "background",
+    "windows": {
+      "background": {
+        "file": "src/background/background.html",
+        "is_background_page": true,
+        "permissions": ["Extensions", "GameInfo"]
+      },
+      "desktop": {
+        "file": "src/windows/desktop/desktop.html",
+        "transparent": false,
+        "resizable": true,
+        "show_in_taskbar": true,
+        "min_size": {
+          "width": 800,
+          "height": 600
+        },
+        "size": {
+          "width": 1000,
+          "height": 700
+        },
+        "permissions": ["Extensions"]
+      },
+      "overlay": {
+        "file": "src/windows/overlay/overlay.html",
+        "transparent": true,
+        "resizable": true,
+        "clickthrough": false,
+        "show_in_taskbar": false,
+        "focus_game_takeover": "ReleaseOnHidden",
+        "focus_game_takeover_release_hotkey": "Escape",
+        "topmost": true,
+        "block_top_window_navigation": true,
+        "min_size": {
+          "width": 300,
+          "height": 200
+        },
+        "size": {
+          "width": 420,
+          "height": 600
+        },
+        "start_position": {
+          "top": 100,
+          "left": 50
+        },
+        "permissions": ["Extensions"]
+      },
+      "settings": {
+        "file": "src/windows/settings/settings.html",
+        "transparent": false,
+        "resizable": true,
+        "show_in_taskbar": true,
+        "min_size": {
+          "width": 500,
+          "height": 400
+        },
+        "size": {
+          "width": 600,
+          "height": 500
+        },
+        "permissions": ["Extensions"]
+      }
+    },
+    "game_events_key_release_timeout": 1000,
+    "game_targeting": {
+      "type": "dedicated",
+      "game_ids": [5426]
+    },
+    "launch_events": [
+      {
+        "event": "GameLaunch",
+        "event_data": {
+          "game_ids": [5426]
+        },
+        "start_minimized": false
+      }
+    ],
+    "developer": {
+      "enable_auto_refresh": true,
+      "reload_delay": 1000
+    },
+    "hotkeys": {
+      "toggle_overlay": {
+        "title": "Toggle Overlay",
+        "action-type": "toggle",
+        "default": "Ctrl+Shift+T",
+        "passthrough": false
+      },
+      "lock_position": {
+        "title": "Lock/Unlock Overlay Position",
+        "action-type": "custom",
+        "default": "Ctrl+Shift+L",
+        "passthrough": false
+      },
+      "increase_transparency": {
+        "title": "Increase Transparency",
+        "action-type": "custom",
+        "default": "Ctrl+Shift+Up",
+        "passthrough": true
+      },
+      "decrease_transparency": {
+        "title": "Decrease Transparency",
+        "action-type": "custom",
+        "default": "Ctrl+Shift+Down",
+        "passthrough": true
+      }
+    },
+    "protocol_override_domains": {},
+    "content_security_policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://ddragon.leagueoflegends.com data:; connect-src 'self' https://ddragon.leagueoflegends.com https://127.0.0.1:* wss://127.0.0.1:*"
+  }
+}
