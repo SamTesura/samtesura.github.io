@@ -473,17 +473,19 @@ function clearAll() {
   adcInput.value = '';
   adcInput.classList.remove('selected');
   document.getElementById('selectedADC').innerHTML = '';
-  
+
   // Clear all champion inputs
   state.enemies = [];
   state.allies = [];
-  
+
   const inputs = document.querySelectorAll('#enemyInputs input, #allyInputs input');
   inputs.forEach(input => {
     input.value = '';
     input.disabled = true;
+    // Hide delete buttons when clearing inputs
+    updateDeleteButtonVisibility(input);
   });
-  
+
   // Update UI
   updateUIState();
   updateTable();
