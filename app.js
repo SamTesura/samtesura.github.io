@@ -328,6 +328,9 @@ function createInput(team, index) {
     updateDeleteButtonVisibility(input);
   });
 
+  // Cache the delete button reference on the input element for efficient lookups
+  input._deleteBtn = deleteBtn;
+
   input.addEventListener('input', (e) => handleInput(e.target));
   input.addEventListener('blur', () => {
     setTimeout(() => clearAutocomplete(), 300);
@@ -421,9 +424,10 @@ function clearAutocomplete() {
 }
 
 function updateDeleteButtonVisibility(input) {
-  if (!input || !input.parentElement) return;
+  if (!input) return;
 
-  const deleteBtn = input.parentElement.querySelector('.delete-champion-btn');
+  // Use cached delete button reference for better performance
+  const deleteBtn = input._deleteBtn;
   if (!deleteBtn) return;
 
   const hasValue = input.value && input.value.trim().length > 0;
