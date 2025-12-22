@@ -305,33 +305,60 @@ function createInputs() {
 function createInput(team, index) {
   const wrapper = document.createElement('div');
   wrapper.style.position = 'relative';
-  
+  wrapper.style.display = 'flex';
+  wrapper.style.alignItems = 'center';
+  wrapper.style.gap = '4px';
+
   const input = document.createElement('input');
   input.type = 'text';
   input.placeholder = `${team === 'enemy' ? 'Enemy' : 'Ally'} ${index + 1}`;
   input.dataset.team = team;
   input.dataset.index = index;
   input.disabled = true;
-  
+
   input.addEventListener('input', (e) => handleInput(e.target));
   input.addEventListener('blur', () => {
     setTimeout(() => clearAutocomplete(), 300);
   });
-  
+
+  // Create delete button (hidden by default)
+  const deleteBtn = document.createElement('button');
+  deleteBtn.className = 'delete-champion-btn';
+  deleteBtn.innerHTML = '×';
+  deleteBtn.style.display = 'none';
+  deleteBtn.title = 'Remove champion';
+  deleteBtn.addEventListener('click', () => {
+    input.value = '';
+    removeChampion(team, index);
+    deleteBtn.style.display = 'none';
+  });
+
+  // Show/hide delete button based on input value
+  input.addEventListener('input', () => {
+    if (input.value.trim()) {
+      deleteBtn.style.display = 'flex';
+    } else {
+      deleteBtn.style.display = 'none';
+    }
+  });
+
   wrapper.appendChild(input);
+  wrapper.appendChild(deleteBtn);
   return wrapper;
 }
 
 function handleInput(input) {
   const query = input.value.toLowerCase().trim();
-  
-  if (query.length < 1) {
+
+  // If input is cleared, remove the champion from state and update table
+  if (query.length === 0) {
     clearAutocomplete();
+    removeChampion(input.dataset.team, parseInt(input.dataset.index));
     return;
   }
-  
+
   const normalizedQuery = normalizeForSearch(query);
-  
+
   const matches = Object.values(state.champions)
     .filter(c => {
       const normalizedName = normalizeForSearch(c.name);
@@ -342,16 +369,16 @@ function handleInput(input) {
       const bName = b.name.toLowerCase();
       const aNormalized = normalizeForSearch(a.name);
       const bNormalized = normalizeForSearch(b.name);
-      
+
       const aStarts = aNormalized.startsWith(normalizedQuery) || aName.startsWith(query);
       const bStarts = bNormalized.startsWith(normalizedQuery) || bName.startsWith(query);
-      
+
       if (aStarts && !bStarts) return -1;
       if (!aStarts && bStarts) return 1;
       return aName.localeCompare(bName);
     })
     .slice(0, 5);
-  
+
   showAutocomplete(input, matches);
 }
 
@@ -383,6 +410,9 @@ function showAutocomplete(input, champions) {
       e.preventDefault();
       input.value = champ.name;
       selectChampion(input.dataset.team, parseInt(input.dataset.index), champ);
+      // Show delete button
+      const deleteBtn = input.parentElement.querySelector('.delete-champion-btn');
+      if (deleteBtn) deleteBtn.style.display = 'flex';
       clearAutocomplete();
     });
     
@@ -402,6 +432,15 @@ function selectChampion(team, index, champion) {
     state.enemies[index] = champion;
   } else {
     state.allies[index] = champion;
+  }
+  updateTable();
+}
+
+function removeChampion(team, index) {
+  if (team === 'enemy') {
+    delete state.enemies[index];
+  } else {
+    delete state.allies[index];
   }
   updateTable();
 }

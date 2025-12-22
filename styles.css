@@ -913,3 +913,36 @@ html {
     scroll-behavior: auto;
   }
 }
+
+.delete-champion-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  background: rgba(207, 38, 47, 0.15);
+  border: 1px solid var(--color-accent-red);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-accent-red);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  flex-shrink: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: inherit;
+}
+
+.delete-champion-btn:hover,
+.delete-champion-btn:focus {
+  background: rgba(207, 38, 47, 0.3);
+  border-color: #ff4444;
+  transform: scale(1.1);
+  outline: none;
+}
+
+.delete-champion-btn:active {
+  transform: scale(0.95);
+}
