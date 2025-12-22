@@ -316,30 +316,21 @@ function createInput(team, index) {
   input.dataset.index = index;
   input.disabled = true;
 
-  input.addEventListener('input', (e) => handleInput(e.target));
-  input.addEventListener('blur', () => {
-    setTimeout(() => clearAutocomplete(), 300);
-  });
-
   // Create delete button (hidden by default)
   const deleteBtn = document.createElement('button');
   deleteBtn.className = 'delete-champion-btn';
   deleteBtn.innerHTML = '×';
-  deleteBtn.style.display = 'none';
   deleteBtn.title = 'Remove champion';
+  deleteBtn.setAttribute('aria-label', 'Remove champion');
   deleteBtn.addEventListener('click', () => {
     input.value = '';
     removeChampion(team, index);
-    deleteBtn.style.display = 'none';
+    deleteBtn.classList.remove('is-visible');
   });
 
-  // Show/hide delete button based on input value
-  input.addEventListener('input', () => {
-    if (input.value.trim()) {
-      deleteBtn.style.display = 'flex';
-    } else {
-      deleteBtn.style.display = 'none';
-    }
+  input.addEventListener('input', (e) => handleInput(e.target, deleteBtn));
+  input.addEventListener('blur', () => {
+    setTimeout(() => clearAutocomplete(), 300);
   });
 
   wrapper.appendChild(input);
@@ -347,8 +338,17 @@ function createInput(team, index) {
   return wrapper;
 }
 
-function handleInput(input) {
+function handleInput(input, deleteBtn) {
   const query = input.value.toLowerCase().trim();
+
+  // Show/hide delete button based on input value
+  if (deleteBtn) {
+    if (query.length > 0) {
+      deleteBtn.classList.add('is-visible');
+    } else {
+      deleteBtn.classList.remove('is-visible');
+    }
+  }
 
   // If input is cleared, remove the champion from state and update table
   if (query.length === 0) {
@@ -412,7 +412,7 @@ function showAutocomplete(input, champions) {
       selectChampion(input.dataset.team, parseInt(input.dataset.index), champ);
       // Show delete button
       const deleteBtn = input.parentElement.querySelector('.delete-champion-btn');
-      if (deleteBtn) deleteBtn.style.display = 'flex';
+      if (deleteBtn) deleteBtn.classList.add('is-visible');
       clearAutocomplete();
     });
     
@@ -438,9 +438,9 @@ function selectChampion(team, index, champion) {
 
 function removeChampion(team, index) {
   if (team === 'enemy') {
-    delete state.enemies[index];
+    state.enemies[index] = undefined;
   } else {
-    delete state.allies[index];
+    state.allies[index] = undefined;
   }
   updateTable();
 }
