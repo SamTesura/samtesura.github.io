@@ -915,7 +915,7 @@ html {
 }
 
 .delete-champion-btn {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 28px;
@@ -933,6 +933,10 @@ html {
   padding: 0;
   line-height: 1;
   font-family: inherit;
+}
+
+.delete-champion-btn.is-visible {
+  display: flex;
 }
 
 .delete-champion-btn:hover,
