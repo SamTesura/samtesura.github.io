@@ -25,6 +25,10 @@ let state = {
   allies: []
 };
 
+// WeakMap to store delete button references for input elements
+// This avoids polluting DOM nodes and prevents naming collisions
+const deleteButtonRefs = new WeakMap();
+
 // CC Classification based on wikilol
 // Reference: https://wiki.leagueoflegends.com/en-us/Types_of_Crowd_Control
 // Reference: https://wiki.leagueoflegends.com/en-us/Cleanse
@@ -328,8 +332,9 @@ function createInput(team, index) {
     updateDeleteButtonVisibility(input);
   });
 
-  // Cache the delete button reference on the input element for efficient lookups
-  input._deleteBtn = deleteBtn;
+  // Store delete button reference in WeakMap for efficient lookups
+  // This avoids polluting the DOM element and prevents naming collisions
+  deleteButtonRefs.set(input, deleteBtn);
 
   input.addEventListener('input', (e) => handleInput(e.target));
   input.addEventListener('blur', () => {
@@ -426,8 +431,8 @@ function clearAutocomplete() {
 function updateDeleteButtonVisibility(input) {
   if (!input) return;
 
-  // Use cached delete button reference for better performance
-  const deleteBtn = input._deleteBtn;
+  // Retrieve delete button reference from WeakMap
+  const deleteBtn = deleteButtonRefs.get(input);
   if (!deleteBtn) return;
 
   const hasValue = input.value && input.value.trim().length > 0;
