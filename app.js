@@ -443,6 +443,11 @@ function updateDeleteButtonVisibility(input) {
   }
 }
 
+function refreshAllDeleteButtons() {
+  const inputs = document.querySelectorAll('#enemyInputs input, #allyInputs input');
+  inputs.forEach(input => updateDeleteButtonVisibility(input));
+}
+
 function selectChampion(team, index, champion) {
   if (team === 'enemy') {
     state.enemies[index] = champion;
@@ -482,12 +487,11 @@ function clearAll() {
   inputs.forEach(input => {
     input.value = '';
     input.disabled = true;
-    // Hide delete buttons when clearing inputs
-    updateDeleteButtonVisibility(input);
   });
 
   // Update UI
   updateUIState();
+  refreshAllDeleteButtons();
   updateTable();
 }
 
