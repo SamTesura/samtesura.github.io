@@ -443,9 +443,10 @@ function updateDeleteButtonVisibility(input) {
   }
 }
 
-function refreshAllDeleteButtons() {
-  const inputs = document.querySelectorAll('#enemyInputs input, #allyInputs input');
-  inputs.forEach(input => updateDeleteButtonVisibility(input));
+function refreshAllDeleteButtons(inputs = null) {
+  // Use provided inputs or query the DOM if none provided
+  const inputElements = inputs || document.querySelectorAll('#enemyInputs input, #allyInputs input');
+  inputElements.forEach(input => updateDeleteButtonVisibility(input));
 }
 
 function selectChampion(team, index, champion) {
@@ -491,7 +492,7 @@ function clearAll() {
 
   // Update UI
   updateUIState();
-  refreshAllDeleteButtons();
+  refreshAllDeleteButtons(inputs); // Reuse existing NodeList
   updateTable();
 }
 
