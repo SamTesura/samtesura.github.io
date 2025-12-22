@@ -325,10 +325,10 @@ function createInput(team, index) {
   deleteBtn.addEventListener('click', () => {
     input.value = '';
     removeChampion(team, index);
-    deleteBtn.classList.remove('is-visible');
+    updateDeleteButtonVisibility(input);
   });
 
-  input.addEventListener('input', (e) => handleInput(e.target, deleteBtn));
+  input.addEventListener('input', (e) => handleInput(e.target));
   input.addEventListener('blur', () => {
     setTimeout(() => clearAutocomplete(), 300);
   });
@@ -338,17 +338,11 @@ function createInput(team, index) {
   return wrapper;
 }
 
-function handleInput(input, deleteBtn) {
+function handleInput(input) {
   const query = input.value.toLowerCase().trim();
 
-  // Show/hide delete button based on input value
-  if (deleteBtn) {
-    if (query.length > 0) {
-      deleteBtn.classList.add('is-visible');
-    } else {
-      deleteBtn.classList.remove('is-visible');
-    }
-  }
+  // Update delete button visibility
+  updateDeleteButtonVisibility(input);
 
   // If input is cleared, remove the champion from state and update table
   if (query.length === 0) {
@@ -410,9 +404,8 @@ function showAutocomplete(input, champions) {
       e.preventDefault();
       input.value = champ.name;
       selectChampion(input.dataset.team, parseInt(input.dataset.index), champ);
-      // Show delete button
-      const deleteBtn = input.parentElement.querySelector('.delete-champion-btn');
-      if (deleteBtn) deleteBtn.classList.add('is-visible');
+      // Update delete button visibility
+      updateDeleteButtonVisibility(input);
       clearAutocomplete();
     });
     
@@ -425,6 +418,20 @@ function showAutocomplete(input, champions) {
 function clearAutocomplete() {
   const existing = document.getElementById('autocomplete');
   if (existing) existing.remove();
+}
+
+function updateDeleteButtonVisibility(input) {
+  if (!input || !input.parentElement) return;
+
+  const deleteBtn = input.parentElement.querySelector('.delete-champion-btn');
+  if (!deleteBtn) return;
+
+  const hasValue = input.value && input.value.trim().length > 0;
+  if (hasValue) {
+    deleteBtn.classList.add('is-visible');
+  } else {
+    deleteBtn.classList.remove('is-visible');
+  }
 }
 
 function selectChampion(team, index, champion) {
