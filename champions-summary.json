@@ -1,5 +1,5 @@
 {
-  "patchVersion": "25-24",
+  "patchVersion": "26-1",
   "champions": [
     {
       "name": "Aatrox",
@@ -12585,12 +12585,12 @@
           "key": "Q",
           "name": "The Darkin Glaive",
           "cd": [
+            10,
             9,
             8,
             7,
             6,
-            5,
-            5
+            6
           ],
           "threat": [
             "KNOCKUP",
