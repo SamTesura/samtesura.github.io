@@ -1,5 +1,5 @@
 {
-  "patchVersion": "26-1",
+  "patchVersion": "26-2",
   "champions": [
     {
       "name": "Aatrox",
@@ -5955,11 +5955,11 @@
           "name": "Unstoppable Force",
           "cd": [
             130,
-            105,
-            80,
-            80,
-            80,
-            80
+            115,
+            100,
+            100,
+            100,
+            100
           ],
           "threat": [
             "GAP_CLOSE",
@@ -7211,12 +7211,12 @@
           "key": "Q",
           "name": "Consume",
           "cd": [
+            13,
             12,
             11,
             10,
             9,
-            8,
-            8
+            9
           ],
           "threat": [
             "SUSTAIN"
