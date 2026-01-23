@@ -114,7 +114,64 @@
         </div>
         <div id="selectedADC" class="selected-champion"></div>
       </div>
-      
+
+      <!-- Live Game Loader Section -->
+      <div class="live-game-section">
+        <div class="live-game-header">
+          <h3>🎮 Load from Live Game</h3>
+          <button id="toggleLiveGame" class="toggle-btn">Show</button>
+        </div>
+        <div id="liveGameContent" class="live-game-content hidden">
+          <div class="live-game-info">
+            <p>Automatically load all champions from your current game using Riot's API. Get your free API key from <a href="https://developer.riotgames.com/" target="_blank" rel="noopener noreferrer">Riot Developer Portal</a>.</p>
+            <p><strong>Note:</strong> Due to browser CORS restrictions, you'll need a CORS proxy. You can use <code>https://corsproxy.io/?</code> or set up your own proxy. This is for personal use only.</p>
+          </div>
+          <div class="live-game-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="riotApiKey">Riot API Key:</label>
+                <input type="password" id="riotApiKey" placeholder="RGAPI-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx">
+                <small>Your API key is stored locally and never sent to our servers</small>
+              </div>
+              <div class="form-group">
+                <label for="corsProxy">CORS Proxy (optional):</label>
+                <input type="text" id="corsProxy" placeholder="https://corsproxy.io/?">
+                <small>Required for browser requests. Leave empty if using a local proxy.</small>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="regionSelect">Region:</label>
+                <select id="regionSelect">
+                  <option value="na1">North America (NA)</option>
+                  <option value="euw1">Europe West (EUW)</option>
+                  <option value="eun1">Europe Nordic & East (EUNE)</option>
+                  <option value="kr">Korea (KR)</option>
+                  <option value="br1">Brazil (BR)</option>
+                  <option value="la1">Latin America North (LAN)</option>
+                  <option value="la2">Latin America South (LAS)</option>
+                  <option value="oc1">Oceania (OCE)</option>
+                  <option value="tr1">Turkey (TR)</option>
+                  <option value="ru">Russia (RU)</option>
+                  <option value="jp1">Japan (JP)</option>
+                  <option value="ph2">Philippines (PH)</option>
+                  <option value="sg2">Singapore (SG)</option>
+                  <option value="th2">Thailand (TH)</option>
+                  <option value="tw2">Taiwan (TW)</option>
+                  <option value="vn2">Vietnam (VN)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="summonerName">Summoner Name:</label>
+                <input type="text" id="summonerName" placeholder="Hide on bush">
+              </div>
+            </div>
+            <button id="loadGameBtn" class="btn-load-game">🔄 Load Live Game</button>
+            <div id="liveGameStatus" class="live-game-status"></div>
+          </div>
+        </div>
+      </div>
+
       <div class="qr-teams" id="teamsContainer">
         <div class="qr-team">
           <h3>🔴 Enemy</h3>
