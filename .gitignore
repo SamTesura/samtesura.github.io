@@ -23,3 +23,5 @@ Thumbs.db
 
 # FTP upload staging
 ftp-upload/
+ftp-upload.zip
+upload-ftp.sh
