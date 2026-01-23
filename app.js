@@ -77,6 +77,10 @@ function normalizeForSearch(text) {
 
 // Initialize
 async function init() {
+  // Cleanup: Remove deprecated localStorage items from removed live game feature
+  localStorage.removeItem('riot_api_key');
+  localStorage.removeItem('cors_proxy');
+
   try {
     state.patch = await fetchPatch();
     state.champions = await fetchChampions(state.patch);
