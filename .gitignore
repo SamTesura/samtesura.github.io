@@ -20,3 +20,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 .cache/
+
+# FTP upload staging
+ftp-upload/
