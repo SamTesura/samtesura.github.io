@@ -2,8 +2,9 @@ name: Auto-Update Champion Data
 
 on:
   schedule:
-    # Run at 08:00 A.M., only on Wednesday (check for new patches)
-    - cron: '0 8 * * 3'
+    # Run at 08:00 AM Eastern Time on Wednesday (13:00 UTC)
+    # Note: During EDT (Mar-Nov), this runs at 09:00 AM local time
+    - cron: '0 13 * * 3'
   workflow_dispatch: # Allow manual trigger
     inputs:
       force_update:
