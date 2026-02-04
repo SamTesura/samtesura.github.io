@@ -1,5 +1,5 @@
 {
-  "patchVersion": "26-2",
+  "patchVersion": "26-3",
   "champions": [
     {
       "name": "Aatrox",
@@ -112,12 +112,12 @@
           "key": "W",
           "name": "Fox-Fire",
           "cd": [
-            10,
             9,
             8,
             7,
             6,
-            6
+            5,
+            5
           ],
           "threat": [],
           "notes": ""
@@ -6246,12 +6246,12 @@
           "key": "E",
           "name": "Solar Snare",
           "cd": [
-            12,
-            11.5,
             11,
             10.5,
             10,
-            10
+            9.5,
+            9,
+            9
           ],
           "threat": [
             "ROOT"
@@ -11771,12 +11771,12 @@
           "key": "E",
           "name": "Sky Splitter",
           "cd": [
-            14,
-            14,
-            14,
-            14,
-            14,
-            14
+            16,
+            16,
+            16,
+            16,
+            16,
+            16
           ],
           "threat": [
             "SLOW"
