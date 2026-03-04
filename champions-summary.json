@@ -1,5 +1,5 @@
 {
-  "patchVersion": "26-4",
+  "patchVersion": "26-5",
   "champions": [
     {
       "name": "Aatrox",
@@ -5568,12 +5568,12 @@
           "key": "R",
           "name": "Lilting Lullaby",
           "cd": [
-            140,
-            120,
-            100,
-            100,
-            100,
-            100
+            150,
+            130,
+            110,
+            110,
+            110,
+            110
           ],
           "threat": [
             "SLEEP"
@@ -7366,10 +7366,10 @@
           "key": "Q",
           "name": "Command: Attack",
           "cd": [
+            7,
             6,
-            5.25,
-            4.5,
-            3.75,
+            5,
+            4,
             3,
             3
           ],
