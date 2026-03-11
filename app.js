@@ -151,7 +151,7 @@ function setupPatchNotesLink() {
     }
 
     const patchVersion = `${majorVersion}-${minorVersion}`;
-    const patchNotesUrl = `https://www.leagueoflegends.com/en-us/news/game-updates/patch-${patchVersion}-notes/`;
+    const patchNotesUrl = `https://www.leagueoflegends.com/en-us/news/game-updates/league-of-legends-patch-${patchVersion}-notes/`;
     link.href = patchNotesUrl;
     link.textContent = `📋 Patch ${patchVersion} Notes`;
   }
