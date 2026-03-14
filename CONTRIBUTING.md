@@ -61,7 +61,6 @@ Have Challenger-level insights to share?
    Or using SSH (if you have SSH keys configured):
    ```bash
    git clone git@github.com:<your-username>/samtesura.github.io.git
-   cd samtesura.github.io
    ```
    ```bash
    cd samtesura.github.io
