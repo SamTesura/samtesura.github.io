@@ -49,23 +49,30 @@ Have Challenger-level insights to share?
    - Navigate to the repository on GitHub
    - Click the "Fork" button to create a copy in your account
 
-2. **Clone Your Fork Locally**
+1. **Clone Your Fork Locally**
+
+   Using HTTPS:
    ```bash
    git clone https://github.com/<your-username>/samtesura.github.io.git
    cd samtesura.github.io
    ```
 
-3. **Create a Feature Branch**
+   Or using SSH (if you have SSH keys configured):
+   ```bash
+   git clone git@github.com:<your-username>/samtesura.github.io.git
+   cd samtesura.github.io
+   ```
+1. **Create a Feature Branch**
    ```bash
    git checkout -b feature/your-feature-name
    ```
 
-4. **Make Your Changes**
+1. **Make Your Changes**
    - Follow the existing code style
    - Test your changes locally
    - Ensure no console errors
 
-5. **Commit Your Changes**
+1. **Commit Your Changes**
    ```bash
    git commit -m "feat: add your feature description"
    ```
@@ -79,12 +86,12 @@ Have Challenger-level insights to share?
    - `test:` for adding tests
    - `chore:` for maintenance tasks
 
-6. **Push to Your Fork**
+1. **Push to Your Fork**
    ```bash
    git push origin feature/your-feature-name
    ```
 
-7. **Submit a Pull Request**
+1. **Submit a Pull Request**
    - Provide a clear description of the changes
    - Reference any related issues
    - Include screenshots for UI changes
