@@ -112,11 +112,11 @@ The application includes a sophisticated automated pipeline that keeps champion 
 ### How It Works
 
 1. **Scheduled Checks**: GitHub Actions runs weekly (Wednesdays 08:00 ET)
-2. **Patch Detection**: Queries Riot's DDragon API for latest version
+2. **Patch Detection**: Queries Riot's DDragon API for the latest version
 3. **Data Sync**: Updates cooldowns and ability names for all champions
 4. **Preservation**: Keeps manually-curated threat tags and strategic tips intact
 5. **New Champions**: Auto-detects new releases and flags for manual review
-6. **Commit & Deploy**: Automatically commits changes and triggers GitHub Pages rebuild
+6. **Commit & Deploy**: Automatically commits changes and triggers a GitHub Pages rebuild
 
 ### What Gets Updated Automatically
 ✅ Champion ability cooldowns (Q, W, E, R)
