@@ -46,8 +46,12 @@ Have Challenger-level insights to share?
 ## 🔧 Pull Request Process
 
 1. **Fork the Repository**
+1. **Fork the Repository**
+   - Fork the repository on GitHub to your account
+   - Clone your fork locally:
    ```bash
-   git clone https://github.com/SamTesura/samtesura.github.io.git
+   git clone https://github.com/<your-username>/samtesura.github.io.git
+   cd samtesura.github.io
    ```
 
 2. **Create a Feature Branch**

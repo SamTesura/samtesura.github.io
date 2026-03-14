@@ -75,14 +75,14 @@ This project follows these security practices:
 - ✅ No `eval()` or dynamic code execution
 - ✅ Input sanitization for user inputs
 - ✅ No inline event handlers
-- ✅ Content Security Policy headers (via GitHub Pages)
-- ✅ HTTPS only (enforced by GitHub Pages)
+- ✅ Content Security Policy headers (automatically provided by GitHub Pages)
+- ✅ HTTPS only (automatically enforced by GitHub Pages)
 
 ### Dependency Security
 - ✅ Minimal dependencies (production: zero)
-- ✅ Regular dependency updates via Dependabot
+- ✅ Regular dependency updates via Dependabot (configure in repository settings)
 - ✅ No outdated or vulnerable packages
-- ✅ GitHub Actions security scanning
+- ✅ GitHub Actions security scanning (see `.github/workflows/` for workflow configurations)
 
 ### Data Privacy
 - ✅ No cookies
@@ -166,5 +166,5 @@ This is a personal open-source project with no bug bounty program. However:
 
 ---
 
-**Last Updated:** March 2026
+**Last Updated:** March 2025
 **Version:** 1.0.0
