@@ -46,25 +46,26 @@ Have Challenger-level insights to share?
 ## 🔧 Pull Request Process
 
 1. **Fork the Repository**
-1. **Fork the Repository**
-   - Fork the repository on GitHub to your account
-   - Clone your fork locally:
+   - Navigate to the repository on GitHub
+   - Click the "Fork" button to create a copy in your account
+
+2. **Clone Your Fork Locally**
    ```bash
    git clone https://github.com/<your-username>/samtesura.github.io.git
    cd samtesura.github.io
    ```
 
-2. **Create a Feature Branch**
+3. **Create a Feature Branch**
    ```bash
    git checkout -b feature/your-feature-name
    ```
 
-3. **Make Your Changes**
+4. **Make Your Changes**
    - Follow the existing code style
    - Test your changes locally
    - Ensure no console errors
 
-4. **Commit Your Changes**
+5. **Commit Your Changes**
    ```bash
    git commit -m "feat: add your feature description"
    ```
@@ -78,12 +79,12 @@ Have Challenger-level insights to share?
    - `test:` for adding tests
    - `chore:` for maintenance tasks
 
-5. **Push to Your Fork**
+6. **Push to Your Fork**
    ```bash
    git push origin feature/your-feature-name
    ```
 
-6. **Submit a Pull Request**
+7. **Submit a Pull Request**
    - Provide a clear description of the changes
    - Reference any related issues
    - Include screenshots for UI changes
