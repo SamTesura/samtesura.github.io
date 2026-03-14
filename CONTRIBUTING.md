@@ -54,12 +54,16 @@ Have Challenger-level insights to share?
    Using HTTPS:
    ```bash
    git clone https://github.com/<your-username>/samtesura.github.io.git
+   ```
+   ```bash
    cd samtesura.github.io
    ```
-
    Or using SSH (if you have SSH keys configured):
    ```bash
    git clone git@github.com:<your-username>/samtesura.github.io.git
+   cd samtesura.github.io
+   ```
+   ```bash
    cd samtesura.github.io
    ```
 1. **Create a Feature Branch**
