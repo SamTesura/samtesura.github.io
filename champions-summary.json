@@ -1,5 +1,5 @@
 {
-  "patchVersion": "26-5",
+  "patchVersion": "26-6",
   "champions": [
     {
       "name": "Aatrox",
@@ -5598,12 +5598,12 @@
           "key": "Q",
           "name": "Ice Shard",
           "cd": [
-            8,
             7,
             6,
             5,
             4,
-            4
+            3,
+            3
           ],
           "threat": [
             "SLOW"
@@ -9217,18 +9217,18 @@
       ],
       "portrait": "Shyvana",
       "passive": {
-        "name": "Fury of the Dragonborn",
+        "name": "Scalemail",
         "desc": ""
       },
       "abilities": [
         {
           "key": "Q",
-          "name": "Twin Bite",
+          "name": "Emberstrike",
           "cd": [
+            10,
+            9,
             8,
-            7.5,
             7,
-            6.5,
             6,
             6
           ],
@@ -9237,12 +9237,12 @@
         },
         {
           "key": "W",
-          "name": "Burnout",
+          "name": "Inferno Aegis",
           "cd": [
-            12,
-            12,
-            12,
-            12,
+            14,
+            13.5,
+            13,
+            12.5,
             12,
             12
           ],
@@ -9251,14 +9251,14 @@
         },
         {
           "key": "E",
-          "name": "Flame Breath",
+          "name": "Molten Burst",
           "cd": [
             12,
+            11.5,
             11,
+            10.5,
             10,
-            9,
-            8,
-            8
+            10
           ],
           "threat": [],
           "notes": ""
