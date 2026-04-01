@@ -1,5 +1,5 @@
 {
-  "patchVersion": "26-6",
+  "patchVersion": "26-7",
   "champions": [
     {
       "name": "Aatrox",
@@ -11250,8 +11250,8 @@
           "key": "R",
           "name": "Primordial Burst",
           "cd": [
-            100,
-            80,
+            120,
+            90,
             60,
             60,
             60,
