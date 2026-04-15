@@ -1,5 +1,5 @@
 {
-  "patchVersion": "26-7",
+  "patchVersion": "26-8",
   "champions": [
     {
       "name": "Aatrox",
@@ -5705,10 +5705,10 @@
           "key": "E",
           "name": "Relentless Pursuit",
           "cd": [
-            18,
-            17,
             16,
+            15.5,
             15,
+            14.5,
             14,
             14
           ],
@@ -6230,12 +6230,12 @@
           "key": "W",
           "name": "Rebuttal",
           "cd": [
+            38,
             35,
-            32,
+            33,
             29,
             26,
-            23,
-            23
+            26
           ],
           "threat": [
             "SHIELD_PEEL"
