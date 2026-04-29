@@ -1,5 +1,5 @@
 {
-  "patchVersion": "26-8",
+  "patchVersion": "26-9",
   "champions": [
     {
       "name": "Aatrox",
@@ -9239,12 +9239,12 @@
           "key": "W",
           "name": "Inferno Aegis",
           "cd": [
-            14,
-            13.5,
             13,
-            12.5,
             12,
-            12
+            11,
+            10,
+            9,
+            9
           ],
           "threat": [],
           "notes": ""
@@ -9254,11 +9254,11 @@
           "name": "Molten Burst",
           "cd": [
             12,
-            11.5,
             11,
-            10.5,
             10,
-            10
+            9,
+            8,
+            8
           ],
           "threat": [],
           "notes": ""
@@ -12849,10 +12849,10 @@
           "key": "E",
           "name": "Spark Surge",
           "cd": [
-            22,
+            24,
+            22.5,
             21,
-            20,
-            19,
+            19.5,
             18,
             18
           ],
@@ -13071,12 +13071,12 @@
           "key": "E",
           "name": "Sleepy Trouble Bubble",
           "cd": [
+            18,
+            17,
             16,
             15,
             14,
-            13,
-            12,
-            12
+            14
           ],
           "threat": [
             "SLEEP"
