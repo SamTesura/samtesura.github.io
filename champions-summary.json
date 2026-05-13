@@ -1,5 +1,5 @@
 {
-  "patchVersion": "26-9",
+  "patchVersion": "26-10",
   "champions": [
     {
       "name": "Aatrox",
@@ -5382,12 +5382,12 @@
           "key": "W",
           "name": "Safeguard / Iron Will",
           "cd": [
-            12,
-            12,
-            12,
-            12,
-            12,
-            12
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
           ],
           "threat": [
             "GAP_CLOSE"
@@ -9240,11 +9240,11 @@
           "name": "Inferno Aegis",
           "cd": [
             13,
-            12,
-            11,
+            12.25,
+            11.5,
+            10.75,
             10,
-            9,
-            9
+            10
           ],
           "threat": [],
           "notes": ""
