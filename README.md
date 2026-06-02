@@ -6,7 +6,7 @@
 
 **A Challenger-level League of Legends threat analysis tool powered by the Riot Games API**
 
-[![Live Site](https://img.shields.io/badge/🌐_Live_Site-adcthreat.gamer.gd-c89b3c?style=for-the-badge)](https://adcthreat.gamer.gd)
+[![Live Site](https://img.shields.io/badge/🌐_Live_Site-adcthreat.gamer.gd-c89b3c?style=for-the-badge)](https://adcthreat.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![Riot API](https://img.shields.io/badge/Powered_by-Riot_API-eb0029?style=for-the-badge&logo=riotgames)](https://developer.riotgames.com/)
 
