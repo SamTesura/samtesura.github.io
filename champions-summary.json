@@ -1,5 +1,5 @@
 {
-  "patchVersion": "26-10",
+  "patchVersion": "26-11",
   "champions": [
     {
       "name": "Aatrox",
@@ -4613,12 +4613,12 @@
           "key": "Q",
           "name": "Null Sphere",
           "cd": [
-            10,
-            9.5,
             9,
             8.5,
             8,
-            8
+            7.5,
+            7,
+            7
           ],
           "threat": [
             "SILENCE"
