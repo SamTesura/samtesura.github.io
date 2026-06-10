@@ -1,5 +1,5 @@
 {
-  "patchVersion": "26-11",
+  "patchVersion": "26-12",
   "champions": [
     {
       "name": "Aatrox",
@@ -3502,12 +3502,12 @@
           "key": "E",
           "name": "Subject: Torment",
           "cd": [
-            13,
-            12.5,
             12,
             11.5,
             11,
-            11
+            10.5,
+            10,
+            10
           ],
           "threat": [
             "ROOT"
