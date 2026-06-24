@@ -1,5 +1,5 @@
 {
-  "patchVersion": "26-12",
+  "patchVersion": "26-13",
   "champions": [
     {
       "name": "Aatrox",
@@ -2201,12 +2201,12 @@
           "key": "E",
           "name": "Stand Aside",
           "cd": [
-            18,
-            17,
             16,
             15,
             14,
-            14
+            13,
+            12,
+            12
           ],
           "threat": [
             "KNOCKBACK"
@@ -4328,10 +4328,10 @@
           "key": "W",
           "name": "Void Seeker",
           "cd": [
-            22,
             20,
-            18,
-            16,
+            18.5,
+            17,
+            15.5,
             14,
             14
           ],
@@ -5657,6 +5657,77 @@
             "STUN"
           ],
           "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "Locke",
+      "slug": "Locke",
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "portrait": "Locke",
+      "passive": {
+        "name": "Silver Stake",
+        "desc": ""
+      },
+      "abilities": [
+        {
+          "key": "Q",
+          "name": "Ritual Nails",
+          "cd": [
+            10,
+            9,
+            8,
+            7,
+            6,
+            6
+          ],
+          "threat": [],
+          "notes": "⚠️ New champion - threat tags need manual review"
+        },
+        {
+          "key": "W",
+          "name": "Soul Ignition",
+          "cd": [
+            18,
+            17,
+            16,
+            15,
+            14,
+            14
+          ],
+          "threat": [],
+          "notes": "⚠️ New champion - threat tags need manual review"
+        },
+        {
+          "key": "E",
+          "name": "Ashen Pursuit",
+          "cd": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "threat": [],
+          "notes": "⚠️ New champion - threat tags need manual review"
+        },
+        {
+          "key": "R",
+          "name": "Purgatory",
+          "cd": [
+            120,
+            100,
+            80,
+            80,
+            80,
+            80
+          ],
+          "threat": [],
+          "notes": "⚠️ New champion - threat tags need manual review"
         }
       ]
     },
@@ -11384,12 +11455,12 @@
           "key": "E",
           "name": "Looming Darkness",
           "cd": [
-            13,
-            13,
-            13,
-            13,
-            13,
-            13
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
           ],
           "threat": [
             "SLOW"
@@ -12602,10 +12673,10 @@
           "key": "W",
           "name": "Dreaded Return",
           "cd": [
-            16,
-            15,
             14,
+            13.5,
             13,
+            12.5,
             12,
             12
           ],
