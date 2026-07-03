@@ -2,7 +2,7 @@
 
 <div align="center">
 
-### 🎮 **[LIVE APPLICATION →](https://adcthreat.gamer.gd)** 🎮
+### 🎮 **[LIVE APPLICATION →](https://adcthreat.app)** 🎮
 
 **A Challenger-level League of Legends threat analysis tool powered by the Riot Games API**
 
@@ -12,7 +12,7 @@
 
 **Developed by [Samuel Mendieta](https://samuelmendieta.com/)**
 
-[Features](#-key-features) • [Live Demo](https://adcthreat.gamer.gd) • [Tech Stack](#-tech-stack) • [Architecture](#-architecture) • [Auto-Updates](#-auto-update-system)
+[Features](#-key-features) • [Live Demo](https://adcthreat.app) • [Tech Stack](#-tech-stack) • [Architecture](#-architecture) • [Auto-Updates](#-auto-update-system)
 
 </div>
 
@@ -22,7 +22,7 @@
 
 **ADC Threat Analyzer** is a production web application that helps League of Legends ADC players analyze matchups in real-time. Built with vanilla JavaScript and integrated with the **Riot Games DDragon API**, the tool provides Challenger-level insights including ability cooldowns, crowd control classifications, and strategic tips sourced from high-elo gameplay across EUW, KR, and CN servers.
 
-**🔗 Live Application:** **[https://adcthreat.gamer.gd](https://adcthreat.gamer.gd)**
+**🔗 Live Application:** **[https://adcthreat.app](https://adcthreat.app)**
 
 ---
 
@@ -204,7 +204,7 @@ The site is automatically deployed via **GitHub Pages** on every push to `main`:
 
 1. Push changes to `main` branch
 2. GitHub Pages builds and deploys automatically
-3. Site is live at [https://adcthreat.gamer.gd](https://adcthreat.gamer.gd) within 1-2 minutes
+3. Site is live at [https://adcthreat.app](https://adcthreat.app) within 1-2 minutes
 
 Custom domain configuration is handled via `CNAME` file (managed by GitHub Pages settings).
 
@@ -270,7 +270,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <div align="center">
 
-### **[🎮 Try the Live Application →](https://adcthreat.gamer.gd)**
+### **[🎮 Try the Live Application →](https://adcthreat.app)**
 
 **Built with ❤️ by [Samuel Mendieta](https://samuelmendieta.com/)**
 
