@@ -1,5 +1,5 @@
 {
-  "patchVersion": "26-15",
+  "patchVersion": "26-16",
   "champions": [
     {
       "name": "Aatrox",
@@ -142,88 +142,12 @@
           "key": "R",
           "name": "Spirit Rush",
           "cd": [
-            110,
-            95,
-            80,
-            80,
-            80,
-            80
-          ],
-          "threat": [
-            "GAP_CLOSE",
-            "DASH"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Ahri",
-      "slug": "Ahri",
-      "tags": [
-        "MAGE",
-        "ASSASSIN"
-      ],
-      "portrait": "Ahri",
-      "passive": {
-        "name": "Essence Theft",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Orb of Deception",
-          "cd": [
-            7,
-            7,
-            7,
-            7,
-            7,
-            7
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Fox-Fire",
-          "cd": [
-            9,
-            8,
-            7,
-            6,
-            5,
-            5
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Charm",
-          "cd": [
-            12,
-            12,
-            12,
-            12,
-            12,
-            12
-          ],
-          "threat": [
-            "CHARM"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Spirit Rush",
-          "cd": [
-            110,
-            95,
-            80,
-            80,
-            80,
-            80
+            140,
+            120,
+            100,
+            100,
+            100,
+            100
           ],
           "threat": [
             "GAP_CLOSE",
@@ -394,7 +318,7 @@
       ],
       "portrait": "Alistar",
       "passive": {
-        "name": "Trample",
+        "name": "Triumphant Roar",
         "desc": ""
       },
       "abilities": [
@@ -402,12 +326,12 @@
           "key": "Q",
           "name": "Pulverize",
           "cd": [
-            17,
-            16,
-            15,
             14,
             13,
-            13
+            12,
+            11,
+            10,
+            10
           ],
           "threat": [
             "KNOCKUP",
@@ -434,93 +358,14 @@
         },
         {
           "key": "E",
-          "name": "Triumphant Roar",
+          "name": "Trample",
           "cd": [
             12,
-            12,
-            12,
-            12,
-            12,
-            12
-          ],
-          "threat": [
-            "STUN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Unbreakable Will",
-          "cd": [
-            120,
-            100,
-            80,
-            80,
-            80,
-            80
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Alistar",
-      "slug": "Alistar",
-      "tags": [
-        "TANK",
-        "SUPPORT"
-      ],
-      "portrait": "Alistar",
-      "passive": {
-        "name": "Trample",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Pulverize",
-          "cd": [
-            17,
-            16,
-            15,
-            14,
-            13,
-            13
-          ],
-          "threat": [
-            "KNOCKUP",
-            "STUN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Headbutt",
-          "cd": [
-            14,
-            13,
-            12,
+            11.5,
             11,
+            10.5,
             10,
             10
-          ],
-          "threat": [
-            "KNOCKBACK",
-            "STUN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Triumphant Roar",
-          "cd": [
-            12,
-            12,
-            12,
-            12,
-            12,
-            12
           ],
           "threat": [
             "STUN"
@@ -639,12 +484,12 @@
           "key": "Q",
           "name": "Bandage Toss",
           "cd": [
-            16,
-            14,
-            12,
-            10,
-            8,
-            8
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
           ],
           "threat": [
             "STUN"
@@ -669,12 +514,12 @@
           "key": "E",
           "name": "Tantrum",
           "cd": [
-            10,
             9,
             8,
             7,
             6,
-            6
+            5,
+            5
           ],
           "threat": [],
           "notes": ""
@@ -684,86 +529,11 @@
           "name": "Curse of the Sad Mummy",
           "cd": [
             150,
-            130,
-            110,
-            110,
-            110,
-            110
-          ],
-          "threat": [
-            "ROOT"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Amumu",
-      "slug": "Amumu",
-      "tags": [
-        "TANK",
-        "SUPPORT"
-      ],
-      "portrait": "Amumu",
-      "passive": {
-        "name": "Cursed Touch",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Bandage Toss",
-          "cd": [
-            16,
-            14,
-            12,
-            10,
-            8,
-            8
-          ],
-          "threat": [
-            "STUN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Despair",
-          "cd": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Tantrum",
-          "cd": [
-            10,
-            9,
-            8,
-            7,
-            6,
-            6
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Curse of the Sad Mummy",
-          "cd": [
-            150,
-            130,
-            110,
-            110,
-            110,
-            110
+            125,
+            100,
+            100,
+            100,
+            100
           ],
           "threat": [
             "ROOT"
@@ -788,12 +558,12 @@
           "key": "Q",
           "name": "Flash Frost",
           "cd": [
-            12,
             11,
             10,
             9,
             8,
-            8
+            7,
+            7
           ],
           "threat": [
             "STUN"
@@ -804,12 +574,12 @@
           "key": "W",
           "name": "Crystallize",
           "cd": [
-            25,
-            25,
-            25,
-            25,
-            25,
-            25
+            17,
+            17,
+            17,
+            17,
+            17,
+            17
           ],
           "threat": [
             "UNBREAKABLE_WALL"
@@ -820,12 +590,12 @@
           "key": "E",
           "name": "Frostbite",
           "cd": [
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
           ],
           "threat": [],
           "notes": ""
@@ -834,88 +604,12 @@
           "key": "R",
           "name": "Glacial Storm",
           "cd": [
-            6,
-            6,
-            6,
-            6,
-            6,
-            6
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Anivia",
-      "slug": "Anivia",
-      "tags": [
-        "MAGE"
-      ],
-      "portrait": "Anivia",
-      "passive": {
-        "name": "Rebirth",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Flash Frost",
-          "cd": [
-            12,
-            11,
-            10,
-            9,
-            8,
-            8
-          ],
-          "threat": [
-            "STUN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Crystallize",
-          "cd": [
-            25,
-            25,
-            25,
-            25,
-            25,
-            25
-          ],
-          "threat": [
-            "UNBREAKABLE_WALL"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Frostbite",
-          "cd": [
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Glacial Storm",
-          "cd": [
-            6,
-            6,
-            6,
-            6,
-            6,
-            6
+            4,
+            3,
+            2,
+            2,
+            2,
+            2
           ],
           "threat": [
             "SLOW"
@@ -955,12 +649,12 @@
           "key": "W",
           "name": "Incinerate",
           "cd": [
-            8,
-            8,
-            8,
-            8,
-            8,
-            8
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
           ],
           "threat": [],
           "notes": ""
@@ -985,87 +679,12 @@
           "key": "R",
           "name": "Summon: Tibbers",
           "cd": [
-            120,
-            120,
-            120,
-            120,
-            120,
-            120
-          ],
-          "threat": [
-            "STUN"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Annie",
-      "slug": "Annie",
-      "tags": [
-        "MAGE",
-        "SUPPORT"
-      ],
-      "portrait": "Annie",
-      "passive": {
-        "name": "Pyromania",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Disintegrate",
-          "cd": [
-            4,
-            4,
-            4,
-            4,
-            4,
-            4
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Incinerate",
-          "cd": [
-            8,
-            8,
-            8,
-            8,
-            8,
-            8
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Molten Shield",
-          "cd": [
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
-          ],
-          "threat": [
-            "SHIELD"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Summon: Tibbers",
-          "cd": [
-            120,
-            120,
-            120,
-            120,
-            120,
-            120
+            130,
+            115,
+            100,
+            100,
+            100,
+            100
           ],
           "threat": [
             "STUN"
@@ -1157,20 +776,20 @@
       ],
       "portrait": "Ashe",
       "passive": {
-        "name": "Focus",
+        "name": "Frost Shot",
         "desc": ""
       },
       "abilities": [
         {
           "key": "Q",
-          "name": "Frost Shot",
+          "name": "Ranger's Focus",
           "cd": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
           ],
           "threat": [],
           "notes": ""
@@ -1179,10 +798,10 @@
           "key": "W",
           "name": "Volley",
           "cd": [
-            16,
-            13,
-            10,
-            7,
+            18,
+            14.5,
+            11,
+            7.5,
             4,
             4
           ],
@@ -1195,12 +814,12 @@
           "key": "E",
           "name": "Hawkshot",
           "cd": [
-            60,
-            60,
-            60,
-            60,
-            60,
-            60
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
           ],
           "threat": [
             "REVEAL"
@@ -1212,88 +831,11 @@
           "name": "Enchanted Crystal Arrow",
           "cd": [
             100,
-            90,
             80,
-            80,
-            80,
-            80
-          ],
-          "threat": [
-            "STUN"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Ashe",
-      "slug": "Ashe",
-      "tags": [
-        "MARKSMAN",
-        "SUPPORT"
-      ],
-      "portrait": "Ashe",
-      "passive": {
-        "name": "Focus",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Frost Shot",
-          "cd": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Volley",
-          "cd": [
-            16,
-            13,
-            10,
-            7,
-            4,
-            4
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Hawkshot",
-          "cd": [
-            60,
-            60,
             60,
             60,
             60,
             60
-          ],
-          "threat": [
-            "REVEAL"
-          ],
-          "notes": "Reveals area and enemies (including stealthed)"
-        },
-        {
-          "key": "R",
-          "name": "Enchanted Crystal Arrow",
-          "cd": [
-            100,
-            90,
-            80,
-            80,
-            80,
-            80
           ],
           "threat": [
             "STUN"
@@ -1734,10 +1276,10 @@
           "key": "E",
           "name": "Power Fist",
           "cd": [
-            9,
-            8,
             7,
+            6.5,
             6,
+            5.5,
             5,
             5
           ],
@@ -1750,89 +1292,12 @@
           "key": "R",
           "name": "Static Field",
           "cd": [
-            30,
-            30,
-            30,
-            30,
-            30,
-            30
-          ],
-          "threat": [
-            "SILENCE"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Blitzcrank",
-      "slug": "Blitzcrank",
-      "tags": [
-        "TANK",
-        "SUPPORT"
-      ],
-      "portrait": "Blitzcrank",
-      "passive": {
-        "name": "Mana Barrier",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Rocket Grab",
-          "cd": [
+            60,
+            40,
             20,
-            19,
-            18,
-            17,
-            16,
-            16
-          ],
-          "threat": [
-            "PULL"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Overdrive",
-          "cd": [
-            15,
-            15,
-            15,
-            15,
-            15,
-            15
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Power Fist",
-          "cd": [
-            9,
-            8,
-            7,
-            6,
-            5,
-            5
-          ],
-          "threat": [
-            "KNOCKUP"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Static Field",
-          "cd": [
-            30,
-            30,
-            30,
-            30,
-            30,
-            30
+            20,
+            20,
+            20
           ],
           "threat": [
             "SILENCE"
@@ -1875,11 +1340,11 @@
           "name": "Pillar of Flame",
           "cd": [
             10,
-            10,
-            10,
-            10,
-            10,
-            10
+            9.5,
+            9,
+            8.5,
+            8,
+            8
           ],
           "threat": [],
           "notes": ""
@@ -1888,12 +1353,12 @@
           "key": "E",
           "name": "Conflagration",
           "cd": [
+            13,
             12,
             11,
             10,
             9,
-            8,
-            8
+            9
           ],
           "threat": [],
           "notes": ""
@@ -1902,85 +1367,12 @@
           "key": "R",
           "name": "Pyroclasm",
           "cd": [
-            105,
+            100,
             90,
-            75,
-            75,
-            75,
-            75
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Brand",
-      "slug": "Brand",
-      "tags": [
-        "MAGE",
-        "SUPPORT"
-      ],
-      "portrait": "Brand",
-      "passive": {
-        "name": "Blaze",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Sear",
-          "cd": [
-            8,
-            7.5,
-            7,
-            6.5,
-            6,
-            6
-          ],
-          "threat": [
-            "STUN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Pillar of Flame",
-          "cd": [
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Conflagration",
-          "cd": [
-            12,
-            11,
-            10,
-            9,
-            8,
-            8
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Pyroclasm",
-          "cd": [
-            105,
-            90,
-            75,
-            75,
-            75,
-            75
+            80,
+            80,
+            80,
+            80
           ],
           "threat": [],
           "notes": ""
@@ -2258,12 +1650,12 @@
           "key": "W",
           "name": "Tactical Sweep",
           "cd": [
-            15,
-            14,
-            13,
             12,
+            11.5,
             11,
-            11
+            10.5,
+            10,
+            10
           ],
           "threat": [
             "SLOW"
@@ -2400,12 +1792,12 @@
           "key": "Q",
           "name": "Rupture",
           "cd": [
-            9,
-            9,
-            9,
-            9,
-            9,
-            9
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
           ],
           "threat": [
             "KNOCKUP"
@@ -2416,91 +1808,14 @@
           "key": "W",
           "name": "Feral Scream",
           "cd": [
-            13,
-            13,
-            13,
-            13,
-            13,
-            13
-          ],
-          "threat": [
-            "SILENCE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Vorpal Spikes",
-          "cd": [
-            0.5,
-            0.5,
-            0.5,
-            0.5,
-            0.5,
-            0.5
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Feast",
-          "cd": [
-            60,
-            60,
-            60,
-            60,
-            60,
-            60
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Cho'Gath",
-      "slug": "Chogath",
-      "tags": [
-        "TANK",
-        "MAGE"
-      ],
-      "portrait": "Chogath",
-      "passive": {
-        "name": "Carnivore",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Rupture",
-          "cd": [
-            9,
-            9,
-            9,
-            9,
+            11,
+            10.5,
+            10,
+            9.5,
             9,
             9
           ],
           "threat": [
-            "KNOCKUP"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Feral Scream",
-          "cd": [
-            13,
-            13,
-            13,
-            13,
-            13,
-            13
-          ],
-          "threat": [
             "SILENCE"
           ],
           "notes": ""
@@ -2509,12 +1824,12 @@
           "key": "E",
           "name": "Vorpal Spikes",
           "cd": [
-            0.5,
-            0.5,
-            0.5,
-            0.5,
-            0.5,
-            0.5
+            8,
+            7,
+            6,
+            5,
+            4,
+            4
           ],
           "threat": [
             "SLOW"
@@ -2525,8 +1840,8 @@
           "key": "R",
           "name": "Feast",
           "cd": [
-            60,
-            60,
+            80,
+            70,
             60,
             60,
             60,
@@ -2546,7 +1861,7 @@
       ],
       "portrait": "Corki",
       "passive": {
-        "name": "Hextech Shrapnel Shells",
+        "name": "Hextech Munitions",
         "desc": ""
       },
       "abilities": [
@@ -2554,12 +1869,12 @@
           "key": "Q",
           "name": "Phosphorus Bomb",
           "cd": [
+            9,
+            8.5,
             8,
-            8,
-            8,
-            8,
-            8,
-            8
+            7.5,
+            7,
+            7
           ],
           "threat": [],
           "notes": ""
@@ -2568,12 +1883,12 @@
           "key": "W",
           "name": "Valkyrie",
           "cd": [
-            26,
-            23,
             20,
-            17,
+            18,
+            16,
             14,
-            14
+            12,
+            12
           ],
           "threat": [
             "GAP_CLOSE",
@@ -2585,12 +1900,12 @@
           "key": "E",
           "name": "Gatling Gun",
           "cd": [
-            16,
-            16,
-            16,
-            16,
-            16,
-            16
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
           ],
           "threat": [],
           "notes": ""
@@ -2599,86 +1914,12 @@
           "key": "R",
           "name": "Missile Barrage",
           "cd": [
-            1.2,
-            1.2,
-            1.2,
-            1.2,
-            1.2,
-            1.2
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Corki",
-      "slug": "Corki",
-      "tags": [
-        "MARKSMAN",
-        "MAGE"
-      ],
-      "portrait": "Corki",
-      "passive": {
-        "name": "Hextech Shrapnel Shells",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Phosphorus Bomb",
-          "cd": [
-            8,
-            8,
-            8,
-            8,
-            8,
-            8
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Valkyrie",
-          "cd": [
-            26,
-            23,
-            20,
-            17,
-            14,
-            14
-          ],
-          "threat": [
-            "GAP_CLOSE",
-            "DASH"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Gatling Gun",
-          "cd": [
-            16,
-            16,
-            16,
-            16,
-            16,
-            16
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Missile Barrage",
-          "cd": [
-            1.2,
-            1.2,
-            1.2,
-            1.2,
-            1.2,
-            1.2
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
           ],
           "threat": [],
           "notes": ""
@@ -2850,13 +2091,13 @@
       ],
       "portrait": "DrMundo",
       "passive": {
-        "name": "Adrenaline Rush",
+        "name": "Goes Where He Pleases",
         "desc": ""
       },
       "abilities": [
         {
           "key": "Q",
-          "name": "Infected Cleaver",
+          "name": "Infected Bonesaw",
           "cd": [
             4,
             4,
@@ -2872,117 +2113,42 @@
         },
         {
           "key": "W",
-          "name": "Burning Agony",
+          "name": "Heart Zapper",
           "cd": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            17,
+            16.5,
+            16,
+            15.5,
+            15,
+            15
           ],
           "threat": [],
           "notes": ""
         },
         {
           "key": "E",
-          "name": "Masochism",
+          "name": "Blunt Force Trauma",
           "cd": [
-            7,
-            7,
-            7,
-            7,
-            7,
-            7
+            9,
+            8.25,
+            7.5,
+            6.75,
+            6,
+            6
           ],
           "threat": [],
           "notes": ""
         },
         {
           "key": "R",
-          "name": "Sadism",
+          "name": "Maximum Dosage",
           "cd": [
-            75,
-            75,
-            75,
-            75,
-            75,
-            75
-          ],
-          "threat": [
-            "SUSTAIN"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Dr. Mundo",
-      "slug": "DrMundo",
-      "tags": [
-        "TANK",
-        "FIGHTER"
-      ],
-      "portrait": "DrMundo",
-      "passive": {
-        "name": "Adrenaline Rush",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Infected Cleaver",
-          "cd": [
-            4,
-            4,
-            4,
-            4,
-            4,
-            4
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Burning Agony",
-          "cd": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Masochism",
-          "cd": [
-            7,
-            7,
-            7,
-            7,
-            7,
-            7
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Sadism",
-          "cd": [
-            75,
-            75,
-            75,
-            75,
-            75,
-            75
+            120,
+            120,
+            120,
+            120,
+            120,
+            120
           ],
           "threat": [
             "SUSTAIN"
@@ -3223,7 +2389,7 @@
       ],
       "portrait": "Evelynn",
       "passive": {
-        "name": "Shadow Walk",
+        "name": "Demon Shade",
         "desc": ""
       },
       "abilities": [
@@ -3231,26 +2397,26 @@
           "key": "Q",
           "name": "Hate Spike",
           "cd": [
-            1.5,
-            1.5,
-            1.5,
-            1.5,
-            1.5,
-            1.5
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
           ],
           "threat": [],
           "notes": ""
         },
         {
           "key": "W",
-          "name": "Dark Frenzy",
+          "name": "Allure",
           "cd": [
             15,
-            15,
-            15,
-            15,
-            15,
-            15
+            14,
+            13,
+            12,
+            11,
+            11
           ],
           "threat": [
             "CHARM"
@@ -3259,14 +2425,14 @@
         },
         {
           "key": "E",
-          "name": "Ravage",
+          "name": "Whiplash",
           "cd": [
-            9,
-            9,
-            9,
-            9,
-            9,
-            9
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
           ],
           "threat": [
             "GAP_CLOSE"
@@ -3275,89 +2441,14 @@
         },
         {
           "key": "R",
-          "name": "Agony's Embrace",
+          "name": "Last Caress",
           "cd": [
-            150,
             120,
-            90,
-            90,
-            90,
-            90
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Evelynn",
-      "slug": "Evelynn",
-      "tags": [
-        "ASSASSIN",
-        "MAGE"
-      ],
-      "portrait": "Evelynn",
-      "passive": {
-        "name": "Shadow Walk",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Hate Spike",
-          "cd": [
-            1.5,
-            1.5,
-            1.5,
-            1.5,
-            1.5,
-            1.5
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Dark Frenzy",
-          "cd": [
-            15,
-            15,
-            15,
-            15,
-            15,
-            15
-          ],
-          "threat": [
-            "CHARM"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Ravage",
-          "cd": [
-            9,
-            9,
-            9,
-            9,
-            9,
-            9
-          ],
-          "threat": [
-            "GAP_CLOSE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Agony's Embrace",
-          "cd": [
-            150,
-            120,
-            90,
-            90,
-            90,
-            90
+            100,
+            80,
+            80,
+            80,
+            80
           ],
           "threat": [],
           "notes": ""
@@ -3381,12 +2472,12 @@
           "key": "Q",
           "name": "Mystic Shot",
           "cd": [
-            6,
             5.5,
+            5.25,
             5,
+            4.75,
             4.5,
-            4,
-            4
+            4.5
           ],
           "threat": [],
           "notes": ""
@@ -3395,12 +2486,12 @@
           "key": "W",
           "name": "Essence Flux",
           "cd": [
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
           ],
           "threat": [],
           "notes": ""
@@ -3409,12 +2500,12 @@
           "key": "E",
           "name": "Arcane Shift",
           "cd": [
+            26,
+            23,
+            20,
             17,
-            15,
-            13,
-            11,
-            9,
-            9
+            14,
+            14
           ],
           "threat": [
             "GAP_CLOSE"
@@ -3425,85 +2516,12 @@
           "key": "R",
           "name": "Trueshot Barrage",
           "cd": [
-            100,
-            100,
-            100,
-            100,
-            100,
-            100
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Ezreal",
-      "slug": "Ezreal",
-      "tags": [
-        "MARKSMAN",
-        "MAGE"
-      ],
-      "portrait": "Ezreal",
-      "passive": {
-        "name": "Rising Spell Force",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Mystic Shot",
-          "cd": [
-            6,
-            5.5,
-            5,
-            4.5,
-            4,
-            4
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Essence Flux",
-          "cd": [
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Arcane Shift",
-          "cd": [
-            17,
-            15,
-            13,
-            11,
-            9,
-            9
-          ],
-          "threat": [
-            "GAP_CLOSE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Trueshot Barrage",
-          "cd": [
-            100,
-            100,
-            100,
-            100,
-            100,
-            100
+            120,
+            105,
+            90,
+            90,
+            90,
+            90
           ],
           "threat": [],
           "notes": ""
@@ -3519,7 +2537,7 @@
       ],
       "portrait": "FiddleSticks",
       "passive": {
-        "name": "Dread",
+        "name": "A Harmless Scarecrow",
         "desc": ""
       },
       "abilities": [
@@ -3528,11 +2546,11 @@
           "name": "Terrify",
           "cd": [
             15,
+            14.5,
             14,
+            13.5,
             13,
-            12,
-            11,
-            11
+            13
           ],
           "threat": [
             "FEAR"
@@ -3541,14 +2559,14 @@
         },
         {
           "key": "W",
-          "name": "Drain",
+          "name": "Bountiful Harvest",
           "cd": [
             10,
+            9.5,
             9,
+            8.5,
             8,
-            7,
-            6,
-            6
+            8
           ],
           "threat": [
             "SUSTAIN"
@@ -3557,14 +2575,14 @@
         },
         {
           "key": "E",
-          "name": "Dark Wind",
+          "name": "Reap",
           "cd": [
-            15,
-            14,
-            13,
-            12,
-            11,
-            11
+            10,
+            9,
+            8,
+            7,
+            6,
+            6
           ],
           "threat": [
             "SILENCE"
@@ -3575,91 +2593,12 @@
           "key": "R",
           "name": "Crowstorm",
           "cd": [
-            150,
             140,
-            130,
-            130,
-            130,
-            130
-          ],
-          "threat": [
-            "GAP_CLOSE"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Fiddlesticks",
-      "slug": "FiddleSticks",
-      "tags": [
-        "MAGE",
-        "SUPPORT"
-      ],
-      "portrait": "FiddleSticks",
-      "passive": {
-        "name": "Dread",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Terrify",
-          "cd": [
-            15,
-            14,
-            13,
-            12,
-            11,
-            11
-          ],
-          "threat": [
-            "FEAR"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Drain",
-          "cd": [
-            10,
-            9,
-            8,
-            7,
-            6,
-            6
-          ],
-          "threat": [
-            "SUSTAIN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Dark Wind",
-          "cd": [
-            15,
-            14,
-            13,
-            12,
-            11,
-            11
-          ],
-          "threat": [
-            "SILENCE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Crowstorm",
-          "cd": [
-            150,
-            140,
-            130,
-            130,
-            130,
-            130
+            110,
+            80,
+            80,
+            80,
+            80
           ],
           "threat": [
             "GAP_CLOSE"
@@ -3912,7 +2851,7 @@
       ],
       "portrait": "Gangplank",
       "passive": {
-        "name": "Grog-Soaked Blade",
+        "name": "Trial by Fire",
         "desc": ""
       },
       "abilities": [
@@ -3920,12 +2859,12 @@
           "key": "Q",
           "name": "Parrrley",
           "cd": [
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
+            4.5,
+            4.5,
+            4.5,
+            4.5,
+            4.5,
+            4.5
           ],
           "threat": [],
           "notes": ""
@@ -3935,11 +2874,11 @@
           "name": "Remove Scurvy",
           "cd": [
             22,
-            21,
             20,
-            19,
             18,
-            18
+            16,
+            14,
+            14
           ],
           "threat": [
             "SUSTAIN"
@@ -3948,14 +2887,14 @@
         },
         {
           "key": "E",
-          "name": "Raise Morale",
+          "name": "Powder Keg",
           "cd": [
-            20,
-            20,
-            20,
-            20,
-            20,
-            20
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
           ],
           "threat": [],
           "notes": ""
@@ -3964,86 +2903,12 @@
           "key": "R",
           "name": "Cannon Barrage",
           "cd": [
+            160,
+            140,
             120,
-            115,
-            110,
-            110,
-            110,
-            110
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Gangplank",
-      "slug": "Gangplank",
-      "tags": [
-        "FIGHTER"
-      ],
-      "portrait": "Gangplank",
-      "passive": {
-        "name": "Grog-Soaked Blade",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Parrrley",
-          "cd": [
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Remove Scurvy",
-          "cd": [
-            22,
-            21,
-            20,
-            19,
-            18,
-            18
-          ],
-          "threat": [
-            "SUSTAIN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Raise Morale",
-          "cd": [
-            20,
-            20,
-            20,
-            20,
-            20,
-            20
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Cannon Barrage",
-          "cd": [
             120,
-            115,
-            110,
-            110,
-            110,
-            110
+            120,
+            120
           ],
           "threat": [
             "SLOW"
@@ -4085,12 +2950,12 @@
           "key": "W",
           "name": "Courage",
           "cd": [
-            24,
-            23,
             22,
-            21,
-            20,
-            20
+            19.5,
+            17,
+            14.5,
+            12,
+            12
           ],
           "threat": [
             "SHIELD"
@@ -4101,12 +2966,12 @@
           "key": "E",
           "name": "Judgment",
           "cd": [
-            13,
-            12,
-            11,
-            10,
             9,
-            9
+            8.25,
+            7.5,
+            6.75,
+            6,
+            6
           ],
           "threat": [],
           "notes": ""
@@ -4115,83 +2980,8 @@
           "key": "R",
           "name": "Demacian Justice",
           "cd": [
-            160,
             120,
-            80,
-            80,
-            80,
-            80
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Garen",
-      "slug": "Garen",
-      "tags": [
-        "FIGHTER",
-        "TANK"
-      ],
-      "portrait": "Garen",
-      "passive": {
-        "name": "Perseverance",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Decisive Strike",
-          "cd": [
-            8,
-            8,
-            8,
-            8,
-            8,
-            8
-          ],
-          "threat": [
-            "SILENCE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Courage",
-          "cd": [
-            24,
-            23,
-            22,
-            21,
-            20,
-            20
-          ],
-          "threat": [
-            "SHIELD"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Judgment",
-          "cd": [
-            13,
-            12,
-            11,
-            10,
-            9,
-            9
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Demacian Justice",
-          "cd": [
-            160,
-            120,
+            100,
             80,
             80,
             80,
@@ -4299,12 +3089,12 @@
           "key": "Q",
           "name": "Barrel Roll",
           "cd": [
-            11.5,
-            10.5,
-            9.5,
-            8.5,
-            7.5,
-            7.5
+            10,
+            9,
+            8,
+            7,
+            6,
+            6
           ],
           "threat": [
             "SLOW"
@@ -4315,12 +3105,12 @@
           "key": "W",
           "name": "Drunken Rage",
           "cd": [
-            25,
-            25,
-            25,
-            25,
-            25,
-            25
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
           ],
           "threat": [],
           "notes": ""
@@ -4329,12 +3119,12 @@
           "key": "E",
           "name": "Body Slam",
           "cd": [
-            7,
-            7,
-            7,
-            7,
-            7,
-            7
+            14,
+            13.5,
+            13,
+            12.5,
+            12,
+            12
           ],
           "threat": [
             "GAP_CLOSE",
@@ -4347,89 +3137,11 @@
           "name": "Explosive Cask",
           "cd": [
             100,
-            90,
-            80,
-            80,
-            80,
-            80
-          ],
-          "threat": [
-            "KNOCKBACK"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Gragas",
-      "slug": "Gragas",
-      "tags": [
-        "FIGHTER",
-        "MAGE"
-      ],
-      "portrait": "Gragas",
-      "passive": {
-        "name": "Happy Hour",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Barrel Roll",
-          "cd": [
-            11.5,
-            10.5,
-            9.5,
-            8.5,
-            7.5,
-            7.5
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Drunken Rage",
-          "cd": [
-            25,
-            25,
-            25,
-            25,
-            25,
-            25
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Body Slam",
-          "cd": [
-            7,
-            7,
-            7,
-            7,
-            7,
-            7
-          ],
-          "threat": [
-            "GAP_CLOSE",
-            "KNOCKBACK"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Explosive Cask",
-          "cd": [
-            100,
-            90,
-            80,
-            80,
-            80,
-            80
+            85,
+            70,
+            70,
+            70,
+            70
           ],
           "threat": [
             "KNOCKBACK"
@@ -4677,13 +3389,13 @@
       ],
       "portrait": "Heimerdinger",
       "passive": {
-        "name": "Techmaturgical Repair Bots",
+        "name": "Hextech Affinity",
         "desc": ""
       },
       "abilities": [
         {
           "key": "Q",
-          "name": "H-28G Evolution Turret",
+          "name": "H-28 G Evolution Turret",
           "cd": [
             1,
             1,
@@ -4699,26 +3411,26 @@
           "key": "W",
           "name": "Hextech Micro-Rockets",
           "cd": [
+            11,
             10,
-            10,
-            10,
-            10,
-            10,
-            10
+            9,
+            8,
+            7,
+            7
           ],
           "threat": [],
           "notes": ""
         },
         {
           "key": "E",
-          "name": "CH-1 Concussion Grenade",
+          "name": "CH-2 Electron Storm Grenade",
           "cd": [
-            13,
-            12,
             11,
-            10,
-            9,
-            9
+            11,
+            11,
+            11,
+            11,
+            11
           ],
           "threat": [
             "STUN"
@@ -4729,85 +3441,12 @@
           "key": "R",
           "name": "UPGRADE!!!",
           "cd": [
-            120,
-            105,
-            90,
-            90,
-            90,
-            90
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Heimerdinger",
-      "slug": "Heimerdinger",
-      "tags": [
-        "MAGE",
-        "SUPPORT"
-      ],
-      "portrait": "Heimerdinger",
-      "passive": {
-        "name": "Techmaturgical Repair Bots",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "H-28G Evolution Turret",
-          "cd": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Hextech Micro-Rockets",
-          "cd": [
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "CH-1 Concussion Grenade",
-          "cd": [
-            13,
-            12,
-            11,
-            10,
-            9,
-            9
-          ],
-          "threat": [
-            "STUN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "UPGRADE!!!",
-          "cd": [
-            120,
-            105,
-            90,
-            90,
-            90,
-            90
+            100,
+            85,
+            70,
+            70,
+            70,
+            70
           ],
           "threat": [],
           "notes": ""
@@ -5202,86 +3841,6 @@
       ]
     },
     {
-      "name": "Janna",
-      "slug": "Janna",
-      "tags": [
-        "SUPPORT",
-        "MAGE"
-      ],
-      "portrait": "Janna",
-      "passive": {
-        "name": "Tailwind",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Howling Gale",
-          "cd": [
-            14,
-            14,
-            14,
-            14,
-            14,
-            14
-          ],
-          "threat": [
-            "KNOCKUP"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Zephyr",
-          "cd": [
-            8,
-            7.5,
-            7,
-            6.5,
-            6,
-            6
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Eye Of The Storm",
-          "cd": [
-            16,
-            15,
-            14,
-            13,
-            12,
-            12
-          ],
-          "threat": [
-            "SHIELD"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Monsoon",
-          "cd": [
-            130,
-            115,
-            100,
-            100,
-            100,
-            100
-          ],
-          "threat": [
-            "KNOCKBACK",
-            "SUSTAIN"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
       "name": "Jarvan IV",
       "slug": "JarvanIV",
       "tags": [
@@ -5356,159 +3915,6 @@
             "UNBREAKABLE_WALL"
           ],
           "notes": "Creates impassable terrain arena that traps enemies for 3.5s"
-        }
-      ]
-    },
-    {
-      "name": "Jarvan IV",
-      "slug": "JarvanIV",
-      "tags": [
-        "FIGHTER",
-        "TANK"
-      ],
-      "portrait": "JarvanIV",
-      "passive": {
-        "name": "Martial Cadence",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Dragon Strike",
-          "cd": [
-            10,
-            9,
-            8,
-            7,
-            6,
-            6
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Golden Aegis",
-          "cd": [
-            9,
-            9,
-            9,
-            9,
-            9,
-            9
-          ],
-          "threat": [
-            "SHIELD",
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Demacian Standard",
-          "cd": [
-            12,
-            11.5,
-            11,
-            10.5,
-            10,
-            10
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Cataclysm",
-          "cd": [
-            120,
-            105,
-            90,
-            90,
-            90,
-            90
-          ],
-          "threat": [
-            "GAP_CLOSE",
-            "KNOCKBACK",
-            "UNBREAKABLE_WALL"
-          ],
-          "notes": "Creates impassable terrain arena that traps enemies for 3.5s"
-        }
-      ]
-    },
-    {
-      "name": "Jax",
-      "slug": "Jax",
-      "tags": [
-        "FIGHTER"
-      ],
-      "portrait": "Jax",
-      "passive": {
-        "name": "Relentless Assault",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Leap Strike",
-          "cd": [
-            8,
-            7.5,
-            7,
-            6.5,
-            6,
-            6
-          ],
-          "threat": [
-            "GAP_CLOSE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Empower",
-          "cd": [
-            7,
-            6,
-            5,
-            4,
-            3,
-            3
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Counter Strike",
-          "cd": [
-            17,
-            15,
-            13,
-            11,
-            9,
-            9
-          ],
-          "threat": [
-            "STUN",
-            "DODGE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Grandmaster-at-Arms",
-          "cd": [
-            110,
-            100,
-            90,
-            90,
-            90,
-            90
-          ],
-          "threat": [],
-          "notes": ""
         }
       ]
     },
@@ -6191,155 +4597,6 @@
       ]
     },
     {
-      "name": "Karthus",
-      "slug": "Karthus",
-      "tags": [
-        "MAGE"
-      ],
-      "portrait": "Karthus",
-      "passive": {
-        "name": "Death Defied",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Lay Waste",
-          "cd": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Wall of Pain",
-          "cd": [
-            15,
-            15,
-            15,
-            15,
-            15,
-            15
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Defile",
-          "cd": [
-            0.5,
-            0.5,
-            0.5,
-            0.5,
-            0.5,
-            0.5
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Requiem",
-          "cd": [
-            200,
-            180,
-            160,
-            160,
-            160,
-            160
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Kassadin",
-      "slug": "Kassadin",
-      "tags": [
-        "ASSASSIN",
-        "MAGE"
-      ],
-      "portrait": "Kassadin",
-      "passive": {
-        "name": "Void Stone",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Null Sphere",
-          "cd": [
-            9,
-            8.5,
-            8,
-            7.5,
-            7,
-            7
-          ],
-          "threat": [
-            "SILENCE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Nether Blade",
-          "cd": [
-            7,
-            7,
-            7,
-            7,
-            7,
-            7
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Force Pulse",
-          "cd": [
-            21,
-            20,
-            19,
-            18,
-            17,
-            17
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Riftwalk",
-          "cd": [
-            5,
-            3.5,
-            2,
-            2,
-            2,
-            2
-          ],
-          "threat": [
-            "GAP_CLOSE"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
       "name": "Kassadin",
       "slug": "Kassadin",
       "tags": [
@@ -6483,154 +4740,6 @@
             45,
             45,
             45
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Katarina",
-      "slug": "Katarina",
-      "tags": [
-        "ASSASSIN",
-        "MAGE"
-      ],
-      "portrait": "Katarina",
-      "passive": {
-        "name": "Voracity",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Bouncing Blade",
-          "cd": [
-            11,
-            10,
-            9,
-            8,
-            7,
-            7
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Preparation",
-          "cd": [
-            15,
-            14,
-            13,
-            12,
-            11,
-            11
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Shunpo",
-          "cd": [
-            12,
-            11,
-            10,
-            9,
-            8,
-            8
-          ],
-          "threat": [
-            "GAP_CLOSE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Death Lotus",
-          "cd": [
-            75,
-            60,
-            45,
-            45,
-            45,
-            45
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Kayle",
-      "slug": "Kayle",
-      "tags": [
-        "MAGE",
-        "MARKSMAN"
-      ],
-      "portrait": "Kayle",
-      "passive": {
-        "name": "Divine Ascent",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Radiant Blast",
-          "cd": [
-            12,
-            11,
-            10,
-            9,
-            8,
-            8
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Celestial Blessing",
-          "cd": [
-            15,
-            15,
-            15,
-            15,
-            15,
-            15
-          ],
-          "threat": [
-            "SUSTAIN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Starfire Spellblade",
-          "cd": [
-            8,
-            7.5,
-            7,
-            6.5,
-            6,
-            6
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Divine Judgment",
-          "cd": [
-            160,
-            120,
-            80,
-            80,
-            80,
-            80
           ],
           "threat": [],
           "notes": ""
@@ -7164,83 +5273,6 @@
       ]
     },
     {
-      "name": "Kog'Maw",
-      "slug": "KogMaw",
-      "tags": [
-        "MARKSMAN",
-        "MAGE"
-      ],
-      "portrait": "KogMaw",
-      "passive": {
-        "name": "Icathian Surprise",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Caustic Spittle",
-          "cd": [
-            7,
-            7,
-            7,
-            7,
-            7,
-            7
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Bio-Arcane Barrage",
-          "cd": [
-            17,
-            17,
-            17,
-            17,
-            17,
-            17
-          ],
-          "threat": [
-            "BURST"
-          ],
-          "notes": "Bonus magic damage and increased attack range (active buff)"
-        },
-        {
-          "key": "E",
-          "name": "Void Ooze",
-          "cd": [
-            12,
-            12,
-            12,
-            12,
-            12,
-            12
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Living Artillery",
-          "cd": [
-            2,
-            1.5,
-            1,
-            1,
-            1,
-            1
-          ],
-          "threat": [
-            "REVEAL"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
       "name": "LeBlanc",
       "slug": "Leblanc",
       "tags": [
@@ -7392,165 +5424,6 @@
           ],
           "threat": [
             "KNOCKBACK"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Lee Sin",
-      "slug": "LeeSin",
-      "tags": [
-        "FIGHTER",
-        "ASSASSIN"
-      ],
-      "portrait": "LeeSin",
-      "passive": {
-        "name": "Flurry",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Sonic Wave / Resonating Strike",
-          "cd": [
-            10,
-            9,
-            8,
-            7,
-            6,
-            6
-          ],
-          "threat": [
-            "GAP_CLOSE",
-            "REVEAL"
-          ],
-          "notes": "Reveals enemies on hit (including stealthed)"
-        },
-        {
-          "key": "W",
-          "name": "Safeguard / Iron Will",
-          "cd": [
-            7,
-            7,
-            7,
-            7,
-            7,
-            7
-          ],
-          "threat": [
-            "GAP_CLOSE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Tempest / Cripple",
-          "cd": [
-            8,
-            8,
-            8,
-            8,
-            8,
-            8
-          ],
-          "threat": [
-            "SLOW",
-            "REVEAL"
-          ],
-          "notes": "Reveals enemies in area (including stealthed)"
-        },
-        {
-          "key": "R",
-          "name": "Dragon's Rage",
-          "cd": [
-            110,
-            85,
-            60,
-            60,
-            60,
-            60
-          ],
-          "threat": [
-            "KNOCKBACK"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Leona",
-      "slug": "Leona",
-      "tags": [
-        "TANK",
-        "SUPPORT"
-      ],
-      "portrait": "Leona",
-      "passive": {
-        "name": "Sunlight",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Shield of Daybreak",
-          "cd": [
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
-          ],
-          "threat": [
-            "STUN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Eclipse",
-          "cd": [
-            14,
-            13,
-            12,
-            11,
-            10,
-            10
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Zenith Blade",
-          "cd": [
-            12,
-            10.5,
-            9,
-            7.5,
-            6,
-            6
-          ],
-          "threat": [
-            "GAP_CLOSE",
-            "ROOT"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Solar Flare",
-          "cd": [
-            90,
-            75,
-            60,
-            60,
-            60,
-            60
-          ],
-          "threat": [
-            "STUN"
           ],
           "notes": ""
         }
@@ -8012,164 +5885,6 @@
       ]
     },
     {
-      "name": "Lulu",
-      "slug": "Lulu",
-      "tags": [
-        "SUPPORT",
-        "MAGE"
-      ],
-      "portrait": "Lulu",
-      "passive": {
-        "name": "Pix, Faerie Companion",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Glitterlance",
-          "cd": [
-            7,
-            7,
-            7,
-            7,
-            7,
-            7
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Whimsy",
-          "cd": [
-            18,
-            18,
-            18,
-            18,
-            18,
-            18
-          ],
-          "threat": [
-            "POLYMORPH"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Help, Pix!",
-          "cd": [
-            10,
-            9.5,
-            9,
-            8.5,
-            8,
-            8
-          ],
-          "threat": [
-            "SHIELD",
-            "REVEAL"
-          ],
-          "notes": "Reveals enemy target (including stealthed)"
-        },
-        {
-          "key": "R",
-          "name": "Wild Growth",
-          "cd": [
-            120,
-            100,
-            80,
-            80,
-            80,
-            80
-          ],
-          "threat": [
-            "KNOCKUP"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Lux",
-      "slug": "Lux",
-      "tags": [
-        "MAGE",
-        "SUPPORT"
-      ],
-      "portrait": "Lux",
-      "passive": {
-        "name": "Illumination",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Light Binding",
-          "cd": [
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
-          ],
-          "threat": [
-            "ROOT"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Prismatic Barrier",
-          "cd": [
-            12,
-            11.5,
-            11,
-            10.5,
-            10,
-            10
-          ],
-          "threat": [
-            "SHIELD"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Lucent Singularity",
-          "cd": [
-            10,
-            9.5,
-            9,
-            8.5,
-            8,
-            8
-          ],
-          "threat": [
-            "SLOW",
-            "REVEAL"
-          ],
-          "notes": "Reveals area (including stealthed)"
-        },
-        {
-          "key": "R",
-          "name": "Final Spark",
-          "cd": [
-            60,
-            50,
-            40,
-            40,
-            40,
-            40
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
       "name": "Lux",
       "slug": "Lux",
       "tags": [
@@ -8320,158 +6035,6 @@
           "threat": [
             "GAP_CLOSE",
             "KNOCKUP"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Malphite",
-      "slug": "Malphite",
-      "tags": [
-        "TANK",
-        "MAGE"
-      ],
-      "portrait": "Malphite",
-      "passive": {
-        "name": "Granite Shield",
-        "desc": "SHIELD_PEEL"
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Seismic Shard",
-          "cd": [
-            8,
-            8,
-            8,
-            8,
-            8,
-            8
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Thunderclap",
-          "cd": [
-            10,
-            9.5,
-            9,
-            8.5,
-            8,
-            8
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Ground Slam",
-          "cd": [
-            7,
-            7,
-            7,
-            7,
-            7,
-            7
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Unstoppable Force",
-          "cd": [
-            130,
-            115,
-            100,
-            100,
-            100,
-            100
-          ],
-          "threat": [
-            "GAP_CLOSE",
-            "KNOCKUP"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Malzahar",
-      "slug": "Malzahar",
-      "tags": [
-        "MAGE"
-      ],
-      "portrait": "Malzahar",
-      "passive": {
-        "name": "Void Shift",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Call of the Void",
-          "cd": [
-            6,
-            6,
-            6,
-            6,
-            6,
-            6
-          ],
-          "threat": [
-            "SILENCE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Void Swarm",
-          "cd": [
-            8,
-            8,
-            8,
-            8,
-            8,
-            8
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Malefic Visions",
-          "cd": [
-            11,
-            10,
-            9,
-            8,
-            7,
-            7
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Nether Grasp",
-          "cd": [
-            140,
-            110,
-            80,
-            80,
-            80,
-            80
-          ],
-          "threat": [
-            "SUPPRESSION"
           ],
           "notes": ""
         }
@@ -8627,82 +6190,6 @@
           "threat": [
             "ROOT"
           ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Master Yi",
-      "slug": "MasterYi",
-      "tags": [
-        "FIGHTER",
-        "ASSASSIN"
-      ],
-      "portrait": "MasterYi",
-      "passive": {
-        "name": "Double Strike",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Alpha Strike",
-          "cd": [
-            20,
-            19.5,
-            19,
-            18.5,
-            18,
-            18
-          ],
-          "threat": [
-            "GAP_CLOSE",
-            "DODGE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Meditate",
-          "cd": [
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
-          ],
-          "threat": [
-            "SUSTAIN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Wuju Style",
-          "cd": [
-            14,
-            14,
-            14,
-            14,
-            14,
-            14
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Highlander",
-          "cd": [
-            85,
-            85,
-            85,
-            85,
-            85,
-            85
-          ],
-          "threat": [],
           "notes": ""
         }
       ]
@@ -9008,79 +6495,6 @@
       ]
     },
     {
-      "name": "Miss Fortune",
-      "slug": "MissFortune",
-      "tags": [
-        "MARKSMAN",
-        "MAGE"
-      ],
-      "portrait": "MissFortune",
-      "passive": {
-        "name": "Love Tap",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Double Up",
-          "cd": [
-            7,
-            6,
-            5,
-            4,
-            3,
-            3
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Strut",
-          "cd": [
-            12,
-            12,
-            12,
-            12,
-            12,
-            12
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Make It Rain",
-          "cd": [
-            18,
-            17,
-            16,
-            15,
-            14,
-            14
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Bullet Time",
-          "cd": [
-            120,
-            110,
-            100,
-            100,
-            100,
-            100
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
       "name": "Mordekaiser",
       "slug": "Mordekaiser",
       "tags": [
@@ -9152,85 +6566,6 @@
             100
           ],
           "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Morgana",
-      "slug": "Morgana",
-      "tags": [
-        "SUPPORT",
-        "MAGE"
-      ],
-      "portrait": "Morgana",
-      "passive": {
-        "name": "Soul Siphon",
-        "desc": "SUSTAIN"
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Dark Binding",
-          "cd": [
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
-          ],
-          "threat": [
-            "ROOT"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Tormented Shadow",
-          "cd": [
-            12,
-            12,
-            12,
-            12,
-            12,
-            12
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Black Shield",
-          "cd": [
-            26,
-            23.5,
-            21,
-            18.5,
-            16,
-            16
-          ],
-          "threat": [
-            "SHIELD_PEEL"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Soul Shackles",
-          "cd": [
-            120,
-            110,
-            100,
-            100,
-            100,
-            100
-          ],
-          "threat": [
-            "STUN",
-            "SLOW",
-            "REVEAL"
-          ],
           "notes": ""
         }
       ]
@@ -9545,79 +6880,6 @@
       ]
     },
     {
-      "name": "Nasus",
-      "slug": "Nasus",
-      "tags": [
-        "FIGHTER",
-        "TANK"
-      ],
-      "portrait": "Nasus",
-      "passive": {
-        "name": "Soul Eater",
-        "desc": "SUSTAIN"
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Siphoning Strike",
-          "cd": [
-            7.5,
-            6.5,
-            5.5,
-            4.5,
-            3.5,
-            3.5
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Wither",
-          "cd": [
-            15,
-            14,
-            13,
-            12,
-            11,
-            11
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Spirit Fire",
-          "cd": [
-            12,
-            12,
-            12,
-            12,
-            12,
-            12
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Fury of the Sands",
-          "cd": [
-            120,
-            100,
-            80,
-            80,
-            80,
-            80
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
       "name": "Nautilus",
       "slug": "Nautilus",
       "tags": [
@@ -9768,82 +7030,6 @@
           "threat": [
             "STUN"
           ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Nidalee",
-      "slug": "Nidalee",
-      "tags": [
-        "ASSASSIN",
-        "MAGE"
-      ],
-      "portrait": "Nidalee",
-      "passive": {
-        "name": "Prowl",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Javelin Toss / Takedown",
-          "cd": [
-            6,
-            6,
-            6,
-            6,
-            6,
-            6
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Bushwhack / Pounce",
-          "cd": [
-            13,
-            12,
-            11,
-            10,
-            9,
-            9
-          ],
-          "threat": [
-            "GAP_CLOSE",
-            "REVEAL"
-          ],
-          "notes": "Bushwhack traps reveal enemies (including stealthed)"
-        },
-        {
-          "key": "E",
-          "name": "Primal Surge / Swipe",
-          "cd": [
-            12,
-            12,
-            12,
-            12,
-            12,
-            12
-          ],
-          "threat": [
-            "SUSTAIN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Aspect Of The Cougar",
-          "cd": [
-            3,
-            3,
-            3,
-            3,
-            3,
-            3
-          ],
-          "threat": [],
           "notes": ""
         }
       ]
@@ -10160,161 +7346,6 @@
       ]
     },
     {
-      "name": "Nunu & Willump",
-      "slug": "Nunu",
-      "tags": [
-        "TANK",
-        "MAGE"
-      ],
-      "portrait": "Nunu",
-      "passive": {
-        "name": "Call of the Freljord",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Consume",
-          "cd": [
-            13,
-            12,
-            11,
-            10,
-            9,
-            9
-          ],
-          "threat": [
-            "SUSTAIN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Biggest Snowball Ever!",
-          "cd": [
-            14,
-            14,
-            14,
-            14,
-            14,
-            14
-          ],
-          "threat": [
-            "KNOCKUP"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Snowball Barrage",
-          "cd": [
-            14,
-            13,
-            12,
-            11,
-            10,
-            10
-          ],
-          "threat": [
-            "ROOT",
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Absolute Zero",
-          "cd": [
-            110,
-            100,
-            90,
-            90,
-            90,
-            90
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Olaf",
-      "slug": "Olaf",
-      "tags": [
-        "FIGHTER",
-        "TANK"
-      ],
-      "portrait": "Olaf",
-      "passive": {
-        "name": "Berserker Rage",
-        "desc": "SUSTAIN"
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Undertow",
-          "cd": [
-            9,
-            9,
-            9,
-            9,
-            9,
-            9
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Tough It Out",
-          "cd": [
-            16,
-            15,
-            14,
-            13,
-            12,
-            12
-          ],
-          "threat": [
-            "SHIELD_PEEL"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Reckless Swing",
-          "cd": [
-            11,
-            10,
-            9,
-            8,
-            7,
-            7
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Ragnarok",
-          "cd": [
-            100,
-            90,
-            80,
-            80,
-            80,
-            80
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
       "name": "Olaf",
       "slug": "Olaf",
       "tags": [
@@ -10538,84 +7569,6 @@
           ],
           "threat": [
             "KNOCKUP"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Pantheon",
-      "slug": "Pantheon",
-      "tags": [
-        "FIGHTER",
-        "ASSASSIN"
-      ],
-      "portrait": "Pantheon",
-      "passive": {
-        "name": "Mortal Will",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Comet Spear",
-          "cd": [
-            11,
-            10.25,
-            9.5,
-            8.75,
-            8,
-            8
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Shield Vault",
-          "cd": [
-            13,
-            12,
-            11,
-            10,
-            9,
-            9
-          ],
-          "threat": [
-            "GAP_CLOSE",
-            "STUN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Aegis Assault",
-          "cd": [
-            22,
-            21,
-            20,
-            19,
-            18,
-            18
-          ],
-          "threat": [
-            "PROJECTILE_BLOCK"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Grand Starfall",
-          "cd": [
-            180,
-            165,
-            150,
-            150,
-            150,
-            150
-          ],
-          "threat": [
-            "GAP_CLOSE"
           ],
           "notes": ""
         }
@@ -11090,84 +8043,6 @@
           ],
           "threat": [
             "CHARM"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Rammus",
-      "slug": "Rammus",
-      "tags": [
-        "TANK"
-      ],
-      "portrait": "Rammus",
-      "passive": {
-        "name": "Spiked Shell",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Powerball",
-          "cd": [
-            12,
-            10.5,
-            9,
-            7.5,
-            6,
-            6
-          ],
-          "threat": [
-            "GAP_CLOSE",
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Defensive Ball Curl",
-          "cd": [
-            7,
-            7,
-            7,
-            7,
-            7,
-            7
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Frenzying Taunt",
-          "cd": [
-            12,
-            12,
-            12,
-            12,
-            12,
-            12
-          ],
-          "threat": [
-            "TAUNT"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Soaring Slam",
-          "cd": [
-            120,
-            105,
-            90,
-            90,
-            90,
-            90
-          ],
-          "threat": [
-            "KNOCKUP",
-            "SLOW"
           ],
           "notes": ""
         }
@@ -11867,78 +8742,6 @@
       ]
     },
     {
-      "name": "Ryze",
-      "slug": "Ryze",
-      "tags": [
-        "MAGE"
-      ],
-      "portrait": "Ryze",
-      "passive": {
-        "name": "Arcane Mastery",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Overload",
-          "cd": [
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Rune Prison",
-          "cd": [
-            11,
-            10.5,
-            10,
-            9.5,
-            9,
-            9
-          ],
-          "threat": [
-            "ROOT"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Spell Flux",
-          "cd": [
-            3.5,
-            3.25,
-            3,
-            2.75,
-            2.5,
-            2.5
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Realm Warp",
-          "cd": [
-            180,
-            160,
-            140,
-            140,
-            140,
-            140
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
       "name": "Samira",
       "slug": "Samira",
       "tags": [
@@ -12402,82 +9205,6 @@
       ]
     },
     {
-      "name": "Shaco",
-      "slug": "Shaco",
-      "tags": [
-        "ASSASSIN"
-      ],
-      "portrait": "Shaco",
-      "passive": {
-        "name": "Backstab",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Deceive",
-          "cd": [
-            13,
-            12.5,
-            12,
-            11.5,
-            11,
-            11
-          ],
-          "threat": [
-            "GAP_CLOSE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Jack In The Box",
-          "cd": [
-            15,
-            15,
-            15,
-            15,
-            15,
-            15
-          ],
-          "threat": [
-            "FEAR"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Two-Shiv Poison",
-          "cd": [
-            8,
-            8,
-            8,
-            8,
-            8,
-            8
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Hallucinate",
-          "cd": [
-            100,
-            90,
-            80,
-            80,
-            80,
-            80
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
       "name": "Shen",
       "slug": "Shen",
       "tags": [
@@ -12703,162 +9430,6 @@
       ]
     },
     {
-      "name": "Singed",
-      "slug": "Singed",
-      "tags": [
-        "TANK",
-        "MAGE"
-      ],
-      "portrait": "Singed",
-      "passive": {
-        "name": "Noxious Slipstream",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Poison Trail",
-          "cd": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Mega Adhesive",
-          "cd": [
-            17,
-            16,
-            15,
-            14,
-            13,
-            13
-          ],
-          "threat": [
-            "GROUNDED",
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Fling",
-          "cd": [
-            10,
-            9.5,
-            9,
-            8.5,
-            8,
-            8
-          ],
-          "threat": [
-            "KNOCKBACK"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Insanity Potion",
-          "cd": [
-            100,
-            100,
-            100,
-            100,
-            100,
-            100
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Sion",
-      "slug": "Sion",
-      "tags": [
-        "TANK",
-        "FIGHTER"
-      ],
-      "portrait": "Sion",
-      "passive": {
-        "name": "Glory in Death",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Decimating Smash",
-          "cd": [
-            10,
-            9,
-            8,
-            7,
-            6,
-            6
-          ],
-          "threat": [
-            "KNOCKUP"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Soul Furnace",
-          "cd": [
-            15,
-            14,
-            13,
-            12,
-            11,
-            11
-          ],
-          "threat": [
-            "SHIELD_PEEL"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Roar of the Slayer",
-          "cd": [
-            12,
-            11,
-            10,
-            9,
-            8,
-            8
-          ],
-          "threat": [
-            "KNOCKBACK"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Unstoppable Onslaught",
-          "cd": [
-            140,
-            100,
-            60,
-            60,
-            60,
-            60
-          ],
-          "threat": [
-            "GAP_CLOSE",
-            "KNOCKUP"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
       "name": "Sion",
       "slug": "Sion",
       "tags": [
@@ -13006,155 +9577,6 @@
             80
           ],
           "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Sivir",
-      "slug": "Sivir",
-      "tags": [
-        "MARKSMAN"
-      ],
-      "portrait": "Sivir",
-      "passive": {
-        "name": "Fleet of Foot",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Boomerang Blade",
-          "cd": [
-            10,
-            9.5,
-            9,
-            8.5,
-            8,
-            8
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Ricochet",
-          "cd": [
-            12,
-            12,
-            12,
-            12,
-            12,
-            12
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Spell Shield",
-          "cd": [
-            24,
-            22.5,
-            21,
-            19.5,
-            18,
-            18
-          ],
-          "threat": [
-            "SHIELD_PEEL"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "On The Hunt",
-          "cd": [
-            120,
-            100,
-            80,
-            80,
-            80,
-            80
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Skarner",
-      "slug": "Skarner",
-      "tags": [
-        "TANK",
-        "FIGHTER"
-      ],
-      "portrait": "Skarner",
-      "passive": {
-        "name": "Threads of Vibration",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Shattered Earth / Upheaval",
-          "cd": [
-            8,
-            6.75,
-            5.5,
-            4.25,
-            3,
-            3
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Seismic Bastion",
-          "cd": [
-            10,
-            9,
-            8,
-            7,
-            6,
-            6
-          ],
-          "threat": [
-            "SHIELD_PEEL"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Ixtal's Impact",
-          "cd": [
-            22,
-            21,
-            20,
-            19,
-            18,
-            18
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Impale",
-          "cd": [
-            120,
-            105,
-            90,
-            90,
-            90,
-            90
-          ],
-          "threat": [
-            "SUPPRESSION"
-          ],
           "notes": ""
         }
       ]
@@ -13383,162 +9805,6 @@
           ],
           "threat": [
             "STUN"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Sona",
-      "slug": "Sona",
-      "tags": [
-        "SUPPORT",
-        "MAGE"
-      ],
-      "portrait": "Sona",
-      "passive": {
-        "name": "Power Chord",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Hymn of Valor",
-          "cd": [
-            8,
-            8,
-            8,
-            8,
-            8,
-            8
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Aria of Perseverance",
-          "cd": [
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
-          ],
-          "threat": [
-            "SHIELD_PEEL"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Song of Celerity",
-          "cd": [
-            14,
-            14,
-            14,
-            14,
-            14,
-            14
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Crescendo",
-          "cd": [
-            140,
-            120,
-            100,
-            100,
-            100,
-            100
-          ],
-          "threat": [
-            "STUN"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Soraka",
-      "slug": "Soraka",
-      "tags": [
-        "SUPPORT",
-        "MAGE"
-      ],
-      "portrait": "Soraka",
-      "passive": {
-        "name": "Salvation",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Starcall",
-          "cd": [
-            8,
-            7,
-            6,
-            5,
-            4,
-            4
-          ],
-          "threat": [
-            "SLOW",
-            "SUSTAIN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Astral Infusion",
-          "cd": [
-            6,
-            5,
-            4,
-            3,
-            2,
-            2
-          ],
-          "threat": [
-            "SUSTAIN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Equinox",
-          "cd": [
-            20,
-            19,
-            18,
-            17,
-            16,
-            16
-          ],
-          "threat": [
-            "ROOT",
-            "SILENCE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Wish",
-          "cd": [
-            150,
-            135,
-            120,
-            120,
-            120,
-            120
-          ],
-          "threat": [
-            "SUSTAIN"
           ],
           "notes": ""
         }
@@ -14159,156 +10425,6 @@
       ]
     },
     {
-      "name": "Taric",
-      "slug": "Taric",
-      "tags": [
-        "SUPPORT",
-        "TANK"
-      ],
-      "portrait": "Taric",
-      "passive": {
-        "name": "Bravado",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Starlight's Touch",
-          "cd": [
-            3,
-            3,
-            3,
-            3,
-            3,
-            3
-          ],
-          "threat": [
-            "SUSTAIN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Bastion",
-          "cd": [
-            15,
-            15,
-            15,
-            15,
-            15,
-            15
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Dazzle",
-          "cd": [
-            16,
-            15,
-            14,
-            13,
-            12,
-            12
-          ],
-          "threat": [
-            "STUN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Cosmic Radiance",
-          "cd": [
-            180,
-            150,
-            120,
-            120,
-            120,
-            120
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Teemo",
-      "slug": "Teemo",
-      "tags": [
-        "MARKSMAN",
-        "MAGE"
-      ],
-      "portrait": "Teemo",
-      "passive": {
-        "name": "Guerrilla Warfare",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Blinding Dart",
-          "cd": [
-            7,
-            7,
-            7,
-            7,
-            7,
-            7
-          ],
-          "threat": [
-            "BLIND"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Move Quick",
-          "cd": [
-            14,
-            14,
-            14,
-            14,
-            14,
-            14
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Toxic Shot",
-          "cd": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Noxious Trap",
-          "cd": [
-            0.25,
-            0.25,
-            0.25,
-            0.25,
-            0.25,
-            0.25
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
       "name": "Teemo",
       "slug": "Teemo",
       "tags": [
@@ -14457,82 +10573,6 @@
           ],
           "threat": [
             "SLOW"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Tristana",
-      "slug": "Tristana",
-      "tags": [
-        "MARKSMAN",
-        "ASSASSIN"
-      ],
-      "portrait": "Tristana",
-      "passive": {
-        "name": "Draw a Bead",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Rapid Fire",
-          "cd": [
-            20,
-            19,
-            18,
-            17,
-            16,
-            16
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Rocket Jump",
-          "cd": [
-            22,
-            20,
-            18,
-            16,
-            14,
-            14
-          ],
-          "threat": [
-            "GAP_CLOSE",
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Explosive Charge",
-          "cd": [
-            16,
-            15.5,
-            15,
-            14.5,
-            14,
-            14
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Buster Shot",
-          "cd": [
-            100,
-            100,
-            100,
-            100,
-            100,
-            100
-          ],
-          "threat": [
-            "KNOCKBACK"
           ],
           "notes": ""
         }
@@ -14767,83 +10807,6 @@
       ]
     },
     {
-      "name": "Tryndamere",
-      "slug": "Tryndamere",
-      "tags": [
-        "FIGHTER",
-        "ASSASSIN"
-      ],
-      "portrait": "Tryndamere",
-      "passive": {
-        "name": "Battle Fury",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Bloodlust",
-          "cd": [
-            12,
-            12,
-            12,
-            12,
-            12,
-            12
-          ],
-          "threat": [
-            "SUSTAIN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Mocking Shout",
-          "cd": [
-            14,
-            14,
-            14,
-            14,
-            14,
-            14
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Spinning Slash",
-          "cd": [
-            12,
-            11,
-            10,
-            9,
-            8,
-            8
-          ],
-          "threat": [
-            "GAP_CLOSE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Undying Rage",
-          "cd": [
-            120,
-            100,
-            80,
-            80,
-            80,
-            80
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
       "name": "Twisted Fate",
       "slug": "TwistedFate",
       "tags": [
@@ -14915,154 +10878,6 @@
             "REVEAL"
           ],
           "notes": "Reveals all enemy champions globally"
-        }
-      ]
-    },
-    {
-      "name": "Twisted Fate",
-      "slug": "TwistedFate",
-      "tags": [
-        "MAGE",
-        "MARKSMAN"
-      ],
-      "portrait": "TwistedFate",
-      "passive": {
-        "name": "Loaded Dice",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Wild Cards",
-          "cd": [
-            6,
-            5.75,
-            5.5,
-            5.25,
-            5,
-            5
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Pick a Card",
-          "cd": [
-            6,
-            6,
-            6,
-            6,
-            6,
-            6
-          ],
-          "threat": [
-            "STUN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Stacked Deck",
-          "cd": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Destiny",
-          "cd": [
-            170,
-            140,
-            110,
-            110,
-            110,
-            110
-          ],
-          "threat": [
-            "REVEAL"
-          ],
-          "notes": "Reveals all enemy champions globally"
-        }
-      ]
-    },
-    {
-      "name": "Twitch",
-      "slug": "Twitch",
-      "tags": [
-        "MARKSMAN",
-        "ASSASSIN"
-      ],
-      "portrait": "Twitch",
-      "passive": {
-        "name": "Deadly Venom",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Ambush",
-          "cd": [
-            16,
-            16,
-            16,
-            16,
-            16,
-            16
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Venom Cask",
-          "cd": [
-            13,
-            12,
-            11,
-            10,
-            9,
-            9
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Contaminate",
-          "cd": [
-            12,
-            11,
-            10,
-            9,
-            8,
-            8
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Spray and Pray",
-          "cd": [
-            90,
-            90,
-            90,
-            90,
-            90,
-            90
-          ],
-          "threat": [],
-          "notes": ""
         }
       ]
     },
@@ -15442,157 +11257,6 @@
             "BURST",
             "STEALTH"
           ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Vayne",
-      "slug": "Vayne",
-      "tags": [
-        "MARKSMAN",
-        "ASSASSIN"
-      ],
-      "portrait": "Vayne",
-      "passive": {
-        "name": "Night Hunter",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Tumble",
-          "cd": [
-            6,
-            5,
-            4,
-            3,
-            2,
-            2
-          ],
-          "threat": [
-            "GAP_CLOSE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Silver Bolts",
-          "cd": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Condemn",
-          "cd": [
-            20,
-            18,
-            16,
-            14,
-            12,
-            12
-          ],
-          "threat": [
-            "KNOCKBACK",
-            "STUN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Final Hour",
-          "cd": [
-            100,
-            85,
-            70,
-            70,
-            70,
-            70
-          ],
-          "threat": [
-            "BURST",
-            "STEALTH"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Veigar",
-      "slug": "Veigar",
-      "tags": [
-        "MAGE"
-      ],
-      "portrait": "Veigar",
-      "passive": {
-        "name": "Phenomenal Evil Power",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Baleful Strike",
-          "cd": [
-            6,
-            5.5,
-            5,
-            4.5,
-            4,
-            4
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Dark Matter",
-          "cd": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Event Horizon",
-          "cd": [
-            20,
-            18.5,
-            17,
-            15.5,
-            14,
-            14
-          ],
-          "threat": [
-            "STUN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Primordial Burst",
-          "cd": [
-            120,
-            90,
-            60,
-            60,
-            60,
-            60
-          ],
-          "threat": [],
           "notes": ""
         }
       ]
@@ -16284,161 +11948,6 @@
             "GAP_CLOSE",
             "SUPPRESSION",
             "SUSTAIN"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Warwick",
-      "slug": "Warwick",
-      "tags": [
-        "FIGHTER",
-        "TANK"
-      ],
-      "portrait": "Warwick",
-      "passive": {
-        "name": "Eternal Hunger",
-        "desc": "SUSTAIN"
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Jaws of the Beast",
-          "cd": [
-            8,
-            7.5,
-            7,
-            6.5,
-            6,
-            6
-          ],
-          "threat": [
-            "GAP_CLOSE",
-            "SUSTAIN"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Blood Hunt",
-          "cd": [
-            80,
-            70,
-            60,
-            50,
-            40,
-            40
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Primal Howl",
-          "cd": [
-            15,
-            14,
-            13,
-            12,
-            11,
-            11
-          ],
-          "threat": [
-            "FEAR"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Infinite Duress",
-          "cd": [
-            110,
-            90,
-            70,
-            70,
-            70,
-            70
-          ],
-          "threat": [
-            "GAP_CLOSE",
-            "SUPPRESSION",
-            "SUSTAIN"
-          ],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Wukong",
-      "slug": "MonkeyKing",
-      "tags": [
-        "FIGHTER",
-        "TANK"
-      ],
-      "portrait": "MonkeyKing",
-      "passive": {
-        "name": "Stone Skin",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Crushing Blow",
-          "cd": [
-            8,
-            7.5,
-            7,
-            6.5,
-            6,
-            6
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "W",
-          "name": "Warrior Trickster",
-          "cd": [
-            22,
-            21,
-            20,
-            19,
-            18,
-            18
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Nimbus Strike",
-          "cd": [
-            10,
-            9.25,
-            8.5,
-            7.75,
-            7,
-            7
-          ],
-          "threat": [
-            "GAP_CLOSE"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Cyclone",
-          "cd": [
-            130,
-            110,
-            90,
-            90,
-            90,
-            90
-          ],
-          "threat": [
-            "KNOCKUP"
           ],
           "notes": ""
         }
@@ -17507,82 +13016,6 @@
             70,
             70,
             70
-          ],
-          "threat": [],
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "name": "Zilean",
-      "slug": "Zilean",
-      "tags": [
-        "SUPPORT",
-        "MAGE"
-      ],
-      "portrait": "Zilean",
-      "passive": {
-        "name": "Time In A Bottle",
-        "desc": ""
-      },
-      "abilities": [
-        {
-          "key": "Q",
-          "name": "Time Bomb",
-          "cd": [
-            10,
-            9.5,
-            9,
-            8.5,
-            8,
-            8
-          ],
-          "threat": [
-            "STUN",
-            "REVEAL"
-          ],
-          "notes": "Reveals attached target (including stealthed)"
-        },
-        {
-          "key": "W",
-          "name": "Rewind",
-          "cd": [
-            14,
-            12,
-            10,
-            8,
-            6,
-            6
-          ],
-          "threat": [],
-          "notes": ""
-        },
-        {
-          "key": "E",
-          "name": "Time Warp",
-          "cd": [
-            15,
-            15,
-            15,
-            15,
-            15,
-            15
-          ],
-          "threat": [
-            "SLOW"
-          ],
-          "notes": ""
-        },
-        {
-          "key": "R",
-          "name": "Chronoshift",
-          "cd": [
-            120,
-            90,
-            60,
-            60,
-            60,
-            60
           ],
           "threat": [],
           "notes": ""
