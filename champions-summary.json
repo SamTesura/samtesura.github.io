@@ -1,5 +1,5 @@
 {
-  "patchVersion": "26-17",
+  "patchVersion": "26-18",
   "champions": [
     {
       "name": "Aatrox",
@@ -9020,11 +9020,11 @@
           "name": "Beat Drop",
           "cd": [
             11,
-            10.5,
-            10,
-            9.5,
-            9,
-            9
+            11,
+            11,
+            11,
+            11,
+            11
           ],
           "threat": [
             "ROOT",
@@ -10078,12 +10078,12 @@
           "key": "W",
           "name": "Force of Will",
           "cd": [
+            13,
             12,
             11,
             10,
             9,
-            8,
-            8
+            9
           ],
           "threat": [
             "SLOW"
