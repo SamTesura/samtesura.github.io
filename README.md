@@ -1,279 +1,147 @@
-# ADC Threat Analyzer
+# ADC Threat
 
-<div align="center">
+**A bot-lane matchup reference for League of Legends ADC players.**
 
-### 🎮 **[LIVE APPLICATION →](https://adcthreat.app)** 🎮
+[![Live site](https://img.shields.io/badge/live-adcthreat.app-c89b3c)](https://adcthreat.app)
+[![Data update](https://github.com/SamTesura/samtesura.github.io/actions/workflows/update-champion-data.yml/badge.svg)](https://github.com/SamTesura/samtesura.github.io/actions/workflows/update-champion-data.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
-**A Challenger-level League of Legends threat analysis tool powered by the Riot Games API**
-
-[![Live Site](https://img.shields.io/badge/🌐_Live_Site-adcthreat.app-c89b3c?style=for-the-badge)](https://adcthreat.app)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
-[![Riot API](https://img.shields.io/badge/Powered_by-Riot_API-eb0029?style=for-the-badge&logo=riotgames)](https://developer.riotgames.com/)
-
-**Developed by [Samuel Mendieta](https://samuelmendieta.com/)**
-
-[Features](#-key-features) • [Live Demo](https://adcthreat.app) • [Tech Stack](#-tech-stack) • [Architecture](#-architecture) • [Auto-Updates](#-auto-update-system)
-
-</div>
+**Live:** <https://adcthreat.app> · **Mirror:** <https://samtesura.github.io> · **Author:** [Samuel Mendieta](https://samuelmendieta.com/)
 
 ---
 
-## 🚀 Overview
+## Contents
 
-**ADC Threat Analyzer** is a production web application that helps League of Legends ADC players analyze matchups in real-time. Built with vanilla JavaScript and integrated with the **Riot Games DDragon API**, the tool provides Challenger-level insights including ability cooldowns, crowd control classifications, and strategic tips sourced from high-elo gameplay across EUW, KR, and CN servers.
-
-**🔗 Live Application:** **[https://adcthreat.app](https://adcthreat.app)**
-
----
-
-## ✨ Key Features
-
-### 🎯 Intelligent Matchup Analysis
-- **26 Marksman ADCs** and **11 Mage ADCs** with meta tier rankings (S+, S, A, B)
-- Real-time threat assessment for 5 enemies and 4 allies
-- Champion ability cooldowns automatically synced with latest patch via **Riot Games API**
-
-### 🛡️ Advanced Crowd Control Classification
-- **Hard CC** (airborne, knockup, knockback, pull, nearsight) — Cannot be cleansed
-- **Soft CC** (stun, root, slow, charm, fear, taunt) — Cleansable with Summoner Spell
-- **Suppression** (Malzahar R, Warwick R, etc.) — QSS only
-- **Vision Control** (stealth, camouflage, invisibility) — Detection mechanics
-
-### 📊 Challenger-Level Strategic Tips
-- Matchup-specific advice for **25+ ADC champions**
-- Support synergy guides for **18+ support champions**
-- Wave management, tempo control, and key ability timers
-- Sourced from high-elo gameplay analysis (EUW, KR, CN Challenger)
-
-### 🤖 Automated Data Pipeline
-- **GitHub Actions** workflow that runs weekly to check for new League patches
-- Automatically updates champion cooldowns, ability names, and patch notes links
-- Detects new champion releases and flags them for manual threat tag review
-- Zero-downtime updates — see [AUTO_UPDATE.md](AUTO_UPDATE.md) for technical details
-
-### 📱 Progressive Web App (PWA)
-- Installable on mobile and desktop devices
-- Offline-capable with service worker caching
-- Optimized for in-game quick reference (alt-tab friendly)
+- [Overview](#overview)
+- [Features](#features)
+- [How it works](#how-it-works)
+- [Technology](#technology)
+- [Repository structure](#repository-structure)
+- [Running locally](#running-locally)
+- [Data maintenance](#data-maintenance)
+- [Deployment](#deployment)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [License and attribution](#license-and-attribution)
 
 ---
 
-## 🛠️ Tech Stack
+## Overview
 
-| Layer | Technology | Purpose |
-|-------|-----------|---------|
-| **Frontend** | HTML5, CSS3, Vanilla JavaScript | Zero-dependency UI with custom design system |
-| **Data Source** | [Riot Games DDragon API](https://developer.riotgames.com/docs/lol) | Champion data, ability cooldowns, patch versions |
-| **Automation** | GitHub Actions + Node.js | Automated patch detection and data synchronization |
-| **Hosting** | GitHub Pages | Static site hosting with custom domain |
-| **HTTP Client** | Axios (Node.js scripts) | API requests in automation pipeline |
+ADC Threat is a single-page web tool. You select the ADC (the bot-lane damage carry) you are playing, then enter the enemy and allied champions. For each champion it shows:
 
-### Why Vanilla JavaScript?
-- **Performance**: No framework overhead — <100KB total page weight
-- **Simplicity**: Easy to maintain and extend without build tooling
-- **Learning**: Demonstrates mastery of core web technologies
-- **Speed**: Instant load times and smooth 60fps interactions
+- ability **cooldowns** for every rank, taken from the current game patch;
+- **crowd-control (CC) classification**, meaning which abilities stun, root, knock up, suppress and so on, and whether *Cleanse* or *Quicksilver Sash (QSS)* can remove the effect;
+- **threat badges** for things that matter to an ADC, such as gap-closers, stealth, shields and projectile blockers;
+- a short **generated advice summary** for each enemy and ally.
 
----
+The site is **static**: it's plain files with no server-side code and no database. It runs entirely in the visitor's browser.
 
-## 🏗️ Architecture
+## Features
 
-### Project Structure
+| Area | Detail |
+|---|---|
+| Champion selection | 37 selectable ADCs (26 marksmen, 11 mages). Up to 5 enemies and 4 allies. Accent-insensitive autocomplete (`kaisa` finds *Kai'Sa*). |
+| Live game data | Patch version, champion list, ability descriptions, cooldowns and portraits load at runtime from Riot's public **Data Dragon** service, so they always match the current patch. |
+| Curated threat model | Every champion's abilities are hand-tagged (e.g. `KNOCKUP`, `STUN`, `GAP_CLOSE`) in `champions-summary.json`. Tags are ranked by danger and colour-coded. |
+| Cleanse rules | Suppression → QSS only · Knock-ups, pulls and Nearsight → not fully removable · Stuns, roots, slows, charms, etc. → cleansable. |
+| Patch notes link | Links directly to the official notes for the current patch. |
+| Automated upkeep | A weekly GitHub Actions job refreshes cooldowns and ability names and detects new champions. |
+| Responsive UI | Dark theme, works from phone width (≈320 px) up to ultrawide displays. |
+
+## How it works
+
+```mermaid
+flowchart LR
+    U[Browser] -->|page + scripts| H[adcthreat.app<br/>Cloudflare]
+    U -->|patch, champions, cooldowns, images| D[Riot Data Dragon]
+    U -->|curated threat tags| J[champions-summary.json]
+    A[GitHub Actions<br/>weekly] -->|refresh cooldowns / new champions| J
+    A --> D
+```
+
+1. When the page loads, the browser asks Data Dragon for the newest patch, then downloads the list of champions for that patch.
+2. It loads `champions-summary.json`, the project's hand-curated threat tags.
+3. Each time you add a champion, the browser downloads that champion's details and combines them with the curated tags. Where no tags exist, it falls back to keyword detection on the ability description.
+4. Every Wednesday a scheduled job updates the curated file with new cooldowns, renamed abilities and newly released champions. It never overwrites the hand-written threat tags.
+
+The algorithms are documented in detail in [`docs/TECHNICAL_REFERENCE.md`](docs/TECHNICAL_REFERENCE.md#7-algorithms).
+
+## Technology
+
+| Layer | Technology |
+|---|---|
+| Front-end | HTML5, CSS3 (custom properties / design tokens), vanilla JavaScript (ES2020). No framework and no build step. |
+| Game data | [Riot Data Dragon](https://developer.riotgames.com/docs/lol#data-dragon), a public CDN that needs no API key |
+| Automation | GitHub Actions + Node.js 20 (built-in `https` module) |
+| Hosting | Cloudflare Worker with static assets (`adcthreat.app`), and GitHub Pages as a mirror (`samtesura.github.io`) |
+| Fonts / ads | Google Fonts (Inter), Google AdSense |
+
+## Repository structure
 
 ```
-├── index.html                      # Entry point with SEO & structured data
-├── app.js                          # Core application logic & state management
-├── adc-list.js                     # Meta ADC champion list & tier rankings
-├── adc-templates.js                # 25+ champion-specific matchup templates
-├── support-tips.js                 # 18+ support synergy guides
-├── champions-summary.json          # Champion ability data (auto-updated via API)
-├── styles.css                      # League-themed design system
+.
+├── index.html                  # Page markup, SEO/social meta tags, script loading order
+├── styles.css                  # All styling; design tokens in :root
+├── app.js                      # Application logic: data loading, search, classification, rendering
+├── adc-list.js                 # Champions selectable as "Your ADC" (Data Dragon IDs)
+├── adc-templates.js            # Hand-written ADC matchup tips (not yet shown in the UI)
+├── support-tips.js             # Hand-written support-synergy tips (not yet shown in the UI)
+├── champions-summary.json      # Curated threat tags + cooldowns for every champion (auto-refreshed)
 ├── scripts/
-│   └── update-champion-data.js     # DDragon API sync script
+│   └── update-champion-data.js # Weekly Data Dragon sync script
 ├── .github/workflows/
-│   └── update-champion-data.yml    # Automated weekly patch updates
-├── icons/                          # PWA app icons (16-512px)
-└── og/                             # Open Graph social media images
+│   └── update-champion-data.yml# Schedule + commit automation for the script above
+├── docs/
+│   └── TECHNICAL_REFERENCE.md  # Full technical & operations manual
+├── assets/, icons/, og/        # Favicons, app icons, social preview image
+├── site.webmanifest            # Web app manifest
+├── ads.txt                     # AdSense authorised-seller declaration
+└── AUTO_UPDATE.md · CONTRIBUTING.md · SECURITY.md · LICENSE
 ```
 
-### Key Technical Decisions
+## Running locally
 
-1. **Vanilla JS over frameworks**: No build step, instant load times, easier debugging
-2. **Client-side rendering**: All logic runs in browser, no backend needed
-3. **Static JSON data**: Fast lookups, easy to version control and review
-4. **GitHub Actions for automation**: Free CI/CD, integrated with repo, easy debugging
-
----
-
-## 🔄 Auto-Update System
-
-The application includes a sophisticated automated pipeline that keeps champion data synchronized with League of Legends patches:
-
-### How It Works
-
-1. **Scheduled Checks**: GitHub Actions runs weekly (Wednesdays 08:00 ET)
-2. **Patch Detection**: Queries Riot's DDragon API for the latest version
-3. **Data Sync**: Updates cooldowns and ability names for all champions
-4. **Preservation**: Keeps manually-curated threat tags and strategic tips intact
-5. **New Champions**: Auto-detects new releases and flags for manual review
-6. **Commit & Deploy**: Automatically commits changes and triggers a GitHub Pages rebuild
-
-### What Gets Updated Automatically
-✅ Champion ability cooldowns (Q, W, E, R)
-✅ Ability names (if changed by Riot)
-✅ Patch version number and patch notes links
-✅ New champion detection
-
-### What Requires Manual Curation
-❌ Threat tags (KNOCKUP, STUN, GAP_CLOSE, etc.)
-❌ Challenger-level strategic tips
-❌ CC classifications (hard/soft/suppression)
-
-**📖 Full Documentation:** [AUTO_UPDATE.md](AUTO_UPDATE.md)
-
----
-
-## 🎨 Design Philosophy
-
-The UI follows a **League of Legends-inspired dark theme** with a structured design system:
-
-- **Color Palette**: Dark backgrounds (#01050d) with Hextech gold accents (#c89b3c)
-- **Typography**: Inter font family with 7-weight scale for hierarchy
-- **Spacing**: 8-point grid system for consistent rhythm
-- **Responsive**: Mobile-first design scaling from 320px to 1800px+ displays
-- **Accessibility**: WCAG AA contrast ratios, 36px minimum touch targets
-- **Performance**: CSS custom properties, hardware-accelerated transforms
-
----
-
-## 💻 Getting Started
-
-### Prerequisites
-
-- Node.js 20+ (for running update scripts)
-- npm
-
-### Installation
+The site has to be served over HTTP, not opened as a file, because it loads `champions-summary.json` with `fetch`.
 
 ```bash
-# Clone the repository
 git clone https://github.com/SamTesura/samtesura.github.io.git
 cd samtesura.github.io
-
-# Install dependencies (for automation scripts only)
-npm install
+npx serve .                 # or: python3 -m http.server 8123
 ```
 
-### Development
+Open the address printed in the terminal. There are no dependencies to install for the website itself.
 
-Since this is a static site with no build process, simply open `index.html` in a browser:
+## Data maintenance
 
-```bash
-# Option 1: Direct file open
-open index.html
+| Task | How |
+|---|---|
+| Refresh champion data now | GitHub → **Actions** → *Auto-Update Champion Data* → **Run workflow** (set `force_update` to `true` if needed), or locally: `npm run update-data` |
+| Edit a champion's threat tags | Edit the `threat` array of the ability in `champions-summary.json` (abilities are ordered Q, W, E, R). Valid tags are listed in the [technical reference](docs/TECHNICAL_REFERENCE.md#73-threat-classification). |
+| Add a selectable ADC | Add its Data Dragon ID (e.g. `KogMaw`, not `Kog'Maw`) to `adc-list.js`. |
+| Review new champions | Search `champions-summary.json` for `New champion - threat tags need manual review`. |
 
-# Option 2: Use a static server (recommended for PWA testing)
-npx serve .
-```
+Step-by-step recipes are in the [technical reference, §14](docs/TECHNICAL_REFERENCE.md#14-how-to-recipes-common-changes).
 
-### Available Scripts
+## Deployment
 
-```bash
-# Check for new League patches and update champion data
-npm run update-data
+Any change merged into `main` goes live on the GitHub Pages mirror within a couple of minutes. The primary domain, `adcthreat.app`, is served by a Cloudflare Worker. See [§10 of the technical reference](docs/TECHNICAL_REFERENCE.md#10-hosting-domain--deployment) for how that deployment works and how to roll back.
 
-# Force update champion data (ignores patch version check)
-npm run test-update
-```
+## Documentation
 
-### Testing the Auto-Update System
+| Document | Contents |
+|---|---|
+| [`docs/TECHNICAL_REFERENCE.md`](docs/TECHNICAL_REFERENCE.md) | Architecture, file map, algorithms, data schemas, pipeline, hosting, troubleshooting runbook, known issues, glossary for non-developers |
+| [`AUTO_UPDATE.md`](AUTO_UPDATE.md) | Background on the automated data pipeline |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to report issues and propose changes |
+| [`SECURITY.md`](SECURITY.md) | How to report a vulnerability privately |
 
-```bash
-# Dry run - checks current patch without making changes
-npm run update-data
+## Contributing
 
-# Force update - useful for testing the pipeline
-FORCE_UPDATE=true npm run update-data
-```
+Bug reports, data corrections and matchup-tip suggestions are welcome through [GitHub Issues](https://github.com/SamTesura/samtesura.github.io/issues). For code changes, fork the repository, create a branch, and open a pull request against `main`. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
----
+## License and attribution
 
-## 🚀 Deployment
+Released under the [MIT License](LICENSE).
 
-The site is automatically deployed via **GitHub Pages** on every push to `main`:
-
-1. Push changes to `main` branch
-2. GitHub Pages builds and deploys automatically
-3. Site is live at [https://adcthreat.app](https://adcthreat.app) within 1-2 minutes
-
-Custom domain configuration is handled via `CNAME` file (managed by GitHub Pages settings).
-
----
-
-## 📊 Technical Highlights
-
-### Performance Optimizations
-- **Zero dependencies** in production (vanilla JS only)
-- **Lazy loading** for champion icons and images
-- **Debounced search** for autocomplete inputs
-- **CSS containment** for efficient repaints
-- **Service worker caching** for offline functionality
-
-### Data Management
-- **Incremental updates**: Only changed champions are updated during patch sync
-- **Data validation**: JSON schema validation in update scripts
-- **Conflict resolution**: Manual threat tags always take precedence over API data
-- **Version control**: All data changes tracked in git for easy rollback
-
-### API Integration
-- **Rate limiting**: 100ms delay per 10 champions to respect Riot's API guidelines
-- **Error handling**: Graceful degradation if DDragon API is unavailable
-- **Caching**: Utilizes DDragon's CDN for champion icons and sprites
-- **Versioned endpoints**: Always fetches data for the correct patch version
-
----
-
-## 🤝 Contributing
-
-This is a personal portfolio project, but feedback and suggestions are welcome!
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📝 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- **Riot Games** for the DDragon API and League of Legends game data
-- **League of Legends Wiki** for comprehensive CC mechanics documentation
-- **Challenger players** from EUW, KR, and CN for inspiring the strategic tips
-
----
-
-## 📬 Contact
-
-**Samuel Mendieta**
-🌐 Website: [samuelmendieta.com](https://samuelmendieta.com/)
-💼 GitHub: [@SamTesura](https://github.com/SamTesura)
-🐦 Twitter: [@BritMendieta](https://twitter.com/BritMendieta)
-
----
-
-<div align="center">
-
-### **[🎮 Try the Live Application →](https://adcthreat.app)**
-
-**Built with ❤️ by [Samuel Mendieta](https://samuelmendieta.com/)**
-
-*Powered by Riot Games API • Hosted on GitHub Pages • Auto-updated via GitHub Actions*
-
-</div>
+ADC Threat isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc. Game data is provided by Riot Data Dragon, and CC rules follow the [League of Legends Wiki](https://wiki.leagueoflegends.com/en-us/Types_of_Crowd_Control).
