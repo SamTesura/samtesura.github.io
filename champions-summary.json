@@ -1,5 +1,5 @@
 {
-  "patchVersion": "26-18",
+  "patchVersion": "26-19",
   "champions": [
     {
       "name": "Aatrox",
@@ -33,10 +33,10 @@
           "key": "W",
           "name": "Infernal Chains",
           "cd": [
-            20,
             18,
-            16,
-            14,
+            16.5,
+            15,
+            13.5,
             12,
             12
           ],
@@ -7250,12 +7250,12 @@
           "key": "R",
           "name": "Paranoia",
           "cd": [
-            140,
-            115,
-            90,
-            90,
-            90,
-            90
+            160,
+            130,
+            100,
+            100,
+            100,
+            100
           ],
           "threat": [
             "GAP_CLOSE",
