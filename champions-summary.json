@@ -1,5 +1,5 @@
 {
-  "patchVersion": "26-20",
+  "patchVersion": "26-21",
   "champions": [
     {
       "name": "Aatrox",
@@ -1944,11 +1944,11 @@
           "name": "Decimate",
           "cd": [
             9,
-            8,
-            7,
-            6,
-            5,
-            5
+            7.75,
+            6.5,
+            5.25,
+            4,
+            4
           ],
           "threat": [],
           "notes": ""
@@ -5382,12 +5382,12 @@
           "key": "W",
           "name": "Safeguard / Iron Will",
           "cd": [
-            7,
-            7,
-            7,
-            7,
-            7,
-            7
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
           ],
           "threat": [
             "GAP_CLOSE"
