@@ -29,7 +29,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
+          # Node 20 is end-of-life and never got the eMudhra CA fix (2026-10); 22.23.4+
+          # has it. check-latest stops the runner's older cached 22.x from being used.
+          check-latest: true
 
       - name: Install dependencies
         run: npm install axios
