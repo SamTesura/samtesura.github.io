@@ -31,7 +31,8 @@ jobs:
         with:
           node-version: '22'
           # Node 20 is end-of-life and never got the eMudhra CA fix (2026-10); 22.23.4+
-          # has it. check-latest stops the runner's older cached 22.x from being used.
+          # has it. check-latest fetches the newest 22.x rather than the runner's cached
+          # one (it falls back to the cache only if it cannot read the version manifest).
           check-latest: true
 
       - name: Install dependencies
