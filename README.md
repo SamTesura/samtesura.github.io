@@ -73,7 +73,7 @@ The algorithms are documented in detail in [`docs/TECHNICAL_REFERENCE.md`](docs/
 |---|---|
 | Front-end | HTML5, CSS3 (custom properties / design tokens), vanilla JavaScript (ES2020). No framework and no build step. |
 | Game data | [Riot Data Dragon](https://developer.riotgames.com/docs/lol#data-dragon), a public CDN that needs no API key |
-| Automation | GitHub Actions + Node.js 20 (built-in `https` module) |
+| Automation | GitHub Actions + Node.js 22 (built-in `https` module) |
 | Hosting | Cloudflare Worker with static assets (`adcthreat.app`), and GitHub Pages as a mirror (`samtesura.github.io`) |
 | Fonts / ads | Google Fonts (Inter), Google AdSense |
 

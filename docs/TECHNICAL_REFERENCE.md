@@ -376,9 +376,11 @@ A push to `main` automatically refreshes GitHub Pages. Whether it also refreshes
 **Running it yourself**
 
 ```bash
-npm run update-data     # normal run (Node 20+; no npm install required — uses built-in https)
+npm run update-data     # normal run (Node 22.23.4+, 24.22.1+ or 26.12.1+; no npm install required — uses built-in https)
 npm run test-update     # FORCE_UPDATE=true (macOS/Linux shell syntax)
 ```
+
+Older Node builds, and every Node 20, still trust the eMudhra certificate authorities whose private keys were found compromised in October 2026. Every request the script makes is HTTPS, so run it on one of the versions above. The workflow already does: it asks for Node 22 with `check-latest: true`, so it never falls back to an older 22.x cached on GitHub's runner.
 
 Then review `git diff champions-summary.json` before committing.
 
