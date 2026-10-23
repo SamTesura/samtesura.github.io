@@ -380,7 +380,7 @@ npm run update-data     # normal run (Node 22.23.4+, 24.22.1+ or 26.12.1+; no np
 npm run test-update     # FORCE_UPDATE=true (macOS/Linux shell syntax)
 ```
 
-Older Node builds, and every Node 20, still trust the eMudhra certificate authorities whose private keys were found compromised in October 2026. Every request the script makes is HTTPS, so run it on one of the versions above. The workflow already does: it asks for Node 22 with `check-latest: true`, so it never falls back to an older 22.x cached on GitHub's runner.
+Older Node builds, and every Node 20, still trust the eMudhra certificate authorities whose private keys were found compromised in October 2026. Every request the script makes is HTTPS, so run it on one of the versions above. The workflow already does: it asks for Node 22 with `check-latest: true`, so it fetches the newest 22.x instead of settling for an older one cached on GitHub's runner (it falls back to the cache only if it cannot read the version manifest).
 
 Then review `git diff champions-summary.json` before committing.
 
